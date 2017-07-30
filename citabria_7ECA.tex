@@ -1,7 +1,7 @@
-\documentclass[8pt]{article}
+\documentclass{article}
 
 \usepackage{calc}
-\usepackage[paperwidth=6in, paperheight=9in, margin=0.25in]{geometry}
+\usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
 \usepackage{textcomp}
@@ -9,16 +9,31 @@
 
 \title{Citabria 7ECA Checklists}
 \author{Jay Vana}
-\date{28 July 2017}
+\date{July 2017}
 
 \begin{document}
 
 \pagenumbering{gobble}
 
-\def\arraystretch{1.3}
-\begin{multicols*}{3}
+\setlength{\columnsep}{0pt}
 
-% Ground Procedures
+\fontfamily{phv}\selectfont
+
+\newenvironment{groupheading}[3]
+{
+\color{#1}
+\colorbox{#2}{\makebox[\columnwidth-7mm]{\textbf{#3}}}
+}
+{
+\color{black}
+}
+
+\def\arraystretch{1.3}
+
+\begin{groupheading}{white}{black}{CITABRIA 7ECA GROUND PROCEDURES}
+\end{groupheading}
+
+\begin{multicols*}{3}
 
 \colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{DISPATCH}}}
 
@@ -26,7 +41,7 @@ Weather \dotfill \textbf{BRIEF}
 
 NOTAMs \dotfill \textbf{CHECK}
 
-W B \dotfill \textbf{CHECK}
+W\&B \dotfill \textbf{CHECK}
 
 Perf. Reqs. \dotfill \textbf{CHECK}
 
@@ -86,9 +101,6 @@ Engine \dotfill \textbf{START}
 
 Lights \dotfill \textbf{ON}
 
-% Check has avionics
-Avionics \dotfill \textbf{ON}
-
 Radios \dotfill \textbf{SET}
 
 ATIS \dotfill \textbf{GET}
@@ -137,63 +149,10 @@ Seatbelts \dotfill \textbf{CHECK}
 
 Throttle Friction \dotfill \textbf{SET} \\
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{AIRPORT INFO}}
+\begin{groupheading}{white}{black}{SWITCH TO FLIGHT}
+\end{groupheading}
 
-\colorbox{orange!60}{\makebox[\columnwidth-7mm]{KPAO}}
-
-ATIS \dotfill \textbf{135.27}
-
-Ground \dotfill \textbf{125.0}
-
-Tower \dotfill \textbf{118.6}
-
-Runway \dotfill \textbf{13/31}
-
-TPA Bay \dotfill \textbf{800'}
-
-TPA Land \dotfill \textbf{1000'}
-
-\colorbox{orange!60}{\makebox[\columnwidth-7mm]{KSQL}}
-
-ATIS \dotfill \textbf{125.9}
-
-Ground \dotfill \textbf{121.6}
-
-Tower \dotfill \textbf{119.0}
-
-Runway \dotfill \textbf{12/30}
-
-TPA Bay \dotfill \textbf{800'}
-
-\colorbox{orange!60}{\makebox[\columnwidth-7mm]{KHWD}}
-
-ATIS \dotfill \textbf{126.7}
-
-Ground \dotfill \textbf{121.4}
-
-Tower \dotfill \textbf{120.2}
-
-Runway \dotfill \textbf{10LR/28LR}
-
-TPA Bay \dotfill \textbf{650'}
-
-TPA Land \dotfill \textbf{850'}
-
-\colorbox{orange!60}{\makebox[\columnwidth-7mm]{KOAK}}
-
-ATIS \dotfill \textbf{133.77}
-
-N. Ground \dotfill \textbf{121.9}
-
-N. Tower \dotfill \textbf{118.3}
-
-S. Tower \dotfill \textbf{127.2}
-
-Runway \dotfill \textbf{10LR/28LR}
-
-TPA Bay \dotfill \textbf{600'} \\
-
-%\columnbreak%
+\color{black}
 
 \colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{SHUTDOWN}}}
 
@@ -229,6 +188,8 @@ Ties \dotfill \textbf{TIE}
 
 Doors \dotfill \textbf{LOCK} \\
 
+\input{airport_info}
+
 \colorbox{red!80}{\makebox[\columnwidth-7mm]{\textbf{FIRE ON START}}}
 
 \colorbox{orange!80}{\makebox[\columnwidth-7mm]{IF START}}
@@ -253,14 +214,11 @@ Evacuate \dotfill \\
 
 \end{multicols*}
 
-% TODO(jsvana): Add common airport information
-
 \pagebreak
 
+\begin{groupheading}{white}{black}{CITABRIA 7ECA FLIGHT PROCEDURES}
+\end{groupheading}
 \begin{multicols*}{3}
-
-% Flight Procedures
-% NOTE: Speeds are in MPH
 
 \colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{TAKEOFF BRIEF}}}
 
@@ -317,6 +275,9 @@ Trim \dotfill \textbf{TAKEOFF}
 Mixture \dotfill \textbf{LEAN}
 
 Taxi Diag. \dotfill \textbf{OPEN} \\
+
+\begin{groupheading}{white}{black}{SWITCH TO GROUND}
+\end{groupheading}
 
 \colorbox{cyan}{\makebox[\columnwidth-7mm]{\textbf{TAKEOFF CFGS}}}
 
@@ -432,13 +393,15 @@ Flight \dotfill \textbf{TERMINATE} \\
 
 \colorbox{orange!80}{\makebox[\columnwidth-7mm]{NOTES}}
 
-- All airspeeds in MPH
+\begin{itemize}
+\item All airspeeds in MPH
 
-- Carb. heat always on if icing suspected, indicated by gradual loss of RPM
+\item Carb. heat always on if icing suspected, indicated by gradual loss of RPM
 
-- Only use rudder on takeoff and landing (no brakes)
+\item Only use rudder on takeoff and landing (no brakes)
 
-- Mixture should be leaned at any altitude when under 75 power. Lean until engine roughness, then enrichen to smoothness.
+\item Mixture should be leaned at any altitude when under 75\% power. Lean until engine roughness, then enrichen to smoothness.
+\end{itemize}
 
 \end{multicols*}
 
