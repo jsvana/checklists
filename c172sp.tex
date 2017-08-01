@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage{calc}
+\usepackage{enumitem}
 \usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
@@ -13,458 +14,350 @@
 
 \begin{document}
 
-\include{common}
-
-\switchheading{C172SP GROUND PROCEDURES}
-
-\begin{multicols*}{3}
-
-\flightheading{DISPATCH}
-
-\checklistitem{Weather}{BRIEF}
-
-\checklistitem{NOTAMs}{CHECK}
-
-\checklistitem{W\&B}{CHECK}
-
-\checklistitem{Perf. Reqs.}{CHECK}
-
-\checklistitem{Squawks}{CHECK}
-
-\flightheading{INSPECTION}
-
-\checklistitem{Fuel}{DRAIN, CHECK}
-
-\checklistitem{AV1ATE}{CHECK}
-
-\checklistitem{AROW}{CHECK}
-
-\checklistitem{Avionics}{OFF}
-
-\checklistitem{Master}{ON}
-
-\checklistitem{Fuel Gauge}{TRUE}
-
-\checklistitem{Flaps}{EXTEND}
-
-\checklistitem{Electrics}{TEST}
-
-\checklistitem{Electrics}{OFF}
-
-\checklistitem{Master}{OFF}
-
-\checklistitem{Oil}{6-8 qts}
-
-\checklistitem{Exterior}{CHECK}
-
-\checklistitem{Ties/Chocks}{REMOVE}
-
-\checklistitem{Baggage}{CHECK}
-
-\checklistitem{Walkaround}{EXECUTE}
-
-\checklistitem{Seat}{ADJUST}
-
-\flightheading{START}
-
-\checklistitem{Passengers}{BRIEF}
-
-\checklistitem{Seatbelts}{CHECK}
-
-\checklistitem{Circuit Breakers}{CHECK}
-
-\checklistitem{Alt. Static}{CHECK}
-
-\checklistitem{Fuel Shutoff}{IN}
-
-\checklistitem{Fuel Selector}{BOTH}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Master}{BATT ON}
-
-\checklistitem{Avionics}{FAN}
-
-\checklistitem{Avionics}{OFF}
-
-\checklistitem{Beacon}{ON}
-
-\flightnote{HOT:\@ SKIP PRIME}
-
-\checklistitem{Throttle}{1"}
-
-\checklistitem{Mixture}{RICH}
-
-\checklistitem{Fuel Pump}{ON}
-
-\checklistitem{Fuel Pump}{OFF}
-
-\flightnote{END PRIME}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Throttle}{SLIGHT}
-
-\checklistitem{Clear Prop}{ANNOUNCE}
-
-\checklistitem{Mags}{START}
-
-\checklistitem{Mixture}{RICH}
-
-\checklistitem{Throttle}{1000 RPM}
-
-\checklistitem{Oil Pressure}{CHECK}
-
-\checklistitem{Master}{ALT ON}
-
-\checklistitem{Mixture}{LEAN}
-
-\checklistitem{Flaps}{UP}
-
-\checklistitem{Lights}{ON}
-
-\checklistitem{Avionics}{ON}
-
-\checklistitem{Radios}{SET}
-
-\checklistitem{ATIS}{GET}
-
-\checklistitem{Barometer}{SET}
-
-\checklistitem{XPDR}{SET}
-
-\checklistitem{Taxi Diag.}{OPEN}
-
-\flightheading{TAXI}
-
-\checklistitem{Brakes}{TEST}
-
-\checklistitem{Controls}{WIND}
-
-\checklistitem{Taxi Turns}{EXECUTE}
-
-\flightheading{RUNUP}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Controls}{CORRECT}
-
-\checklistitem{Flight Inst.}{CHECK}
-
-\checklistitem{Fuel}{BOTH}
-
-\checklistitem{Autopilot}{CHECK}
-
-\checklistitem{Trim}{TAKEOFF}
-
-\checklistitem{GPS/NAV}{CONFIG}
-
-\checklistitem{Heading Bug}{SET}
-
-\checklistitem{Radios}{SET}
-
-\checklistitem{XPDR}{SET}
-
-\checklistitem{Mixture}{RICH}
-
-\checklistitem{Throttle}{1800 RPM}
-
-\checklistitem{Annunciators}{CHECK}
-
-\checklistitem{Vacuum}{CHECK}
-
-\checklistitem{Amps/Volts}{CHECK}
-
-\checklistitem{Oil}{CHECK}
-
-\checklistitem{Mags}{CHECK}
-
-\checklistitem{Throttle}{1000 RPM}
-
-\checklistitem{Throttle Friction}{SET}
-
-\switchheading{SWITCH TO FLIGHT}
-
-\flightheading{SHUTDOWN}
-
-\checklistitem{XPDR}{SET}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Electrical}{OFF}
-
-\checklistitem{Avionics}{OFF}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Mags}{OFF}
-
-\checklistitem{Master}{OFF}
-
-\checklistitem{Fuel}{LEFT}
-
-\checklistitem{Flight Plan}{CLOSE}
-
-\flightheading{SECURING}
-
-\checklistitem{Control Lock}{SET}
-
-\checklistitem{Hobbs/Tach}{NOTE}
-
-\checklistitem{Squawks}{NOTE}
-
-\checklistitem{Sun Shade}{REPLACE}
-
-\checklistitem{Pitot Cover}{REPLACE}
-
-\checklistitem{Wheels}{CHOCK}
-
-\checklistitem{Ties}{TIE}
-
-\checklistitem{Doors}{LOCK}
-
-\emergencyheading{FIRE ON START}
-
-\emergencynote{IF START}
-
-\checklistitem{Run}{5 sec}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-Evacuate \dotfill
-
-\emergencynote{IF NO START}
-
-\checklistitem{Crank}{CONTINUE}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Throttle}{FULL}
-
-\checklistitem{Fuel Shutoff}{OUT}
-
-Evacuate \dotfill
-
-\end{multicols*}
-
-\pagebreak
-
-\switchheading{C172SP FLIGHT PROCEDURES}
-
-\begin{multicols*}{3}
-
-\flightheading{TAKEOFF BRIEF}
-
-\checklistitem{Runway}{CHECK}
-
-\checklistitem{HI}{SET TO COMPASS}
-
-\checklistitem{Crosswind}{CHECK}
-
-\checklistitem{Abort Speed}{NOTE}
-
-\checklistitem{Technique}{NOTE}
-
-\checklistitem{Flaps}{SET}
-
-\checklistitem{Min. Ret. Alt.}{NOTE}
-
-\checklistitem{Best Glide}{60-70}
-
-\checklistitem{Time}{NOTE}
-
-\checklistitem{Mixture}{RICH}
-
-\flightheading{CLIMB}
-
-\checklistitem{Flaps}{UP}
-
-\checklistitem{Mixture}{LEAN $>$3k}
-
-\checklistitem{HI}{SET TO COMPASS}
-
-\checklistitem{Engine Inst.}{CHECK}
-
-\flightheading{PRE-DESCENT}
-
-\checklistitem{HI}{SET TO COMPASS}
-
-\checklistitem{Engine Inst.}{CHECK}
-
-\checklistitem{ATIS}{GET}
-
-\checklistitem{Barometer}{SET}
-
-\checklistitem{Tower}{CONTACT}
-
-\checklistitem{Fuel}{BOTH}
-
-\checklistitem{Mixture}{ENRICH}
-
-\checklistitem{Lights}{ON}
-
-\flightheading{AFTER LANDING}
-
-\checklistitem{Flaps}{UP}
-
-\checklistitem{Trim}{TAKEOFF}
-
-\checklistitem{Mixture}{LEAN}
-
-\checklistitem{Taxi Diag.}{OPEN}
-
-\switchheading{SWITCH TO GROUND}
-
-\configheading{TAKEOFF CFGS}
-
-\configsubheading{NORMAL}
-
-\checklistitem{Flaps}{UP}
-
-\checklistitem{Rotate}{55}
-
-\checklistitem{Climb}{74}
-
-\configsubheading{SHORT}
-
-\checklistitem{Flaps}{10}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Climb}{56 TO 50'}
-
-\checklistitem{Flaps}{UP}
-
-\configsubheading{SOFT}
-
-\checklistitem{Flaps}{10}
-
-\checklistitem{Nosewheel}{LIGHT}
-
-\checklistitem{Ground Effect}{60}
-
-\checklistitem{Climb}{65}
-
-\checklistitem{Flaps}{UP}
-
-\configheading{APPROACH CFGS}
-
-\configsubheading{NORMAL/SOFT}
-
-\checklistitem{Flaps}{FULL}
-
-\checklistitem{Speed}{65}
-
-\configsubheading{SHORT}
-
-\checklistitem{Flaps}{FULL}
-
-\checklistitem{Speed}{60}
-
-\electricalheading{LOW VOLTAGE}
-
-\checklistitem{Power}{GT 1000 RPM}
-
-\checklistitem{Lights/Pitot}{OFF}
-
-\checklistitem{Avionics}{OFF}
-
-\checklistitem{Master}{ALT OFF}
-
-\checklistitem{Alt}{CHECK}
-
-\checklistitem{Master}{ALT ON}
-
-\checklistitem{Avionics}{ESSENTIAL}
-
-\checklistitem{Lights/Pitot}{ESSENTIAL}
-
-\checklistitem{Flight}{TERMINATE}
-
-\emergencynote{CYCLE ONCE ONLY}
-
-\electricalheading{OVERVOLTAGE}
-
-\checklistitem{Master}{ALT OFF}
-
-\checklistitem{Alt}{PULL}
-
-\checklistitem{Avionics}{OFF}
-
-\checklistitem{Lights/Pitot}{Essential}
-
-\checklistitem{Flight}{TERMINATE}
-
-\emergencyheading{ENGINE FAILURE}
-
-\checklistitem{Best Glide}{60-70}
-
-\checklistitem{Landing Site}{FIND}
-
-\checklistitem{Fuel Shutoff}{ON}
-
-\checklistitem{Throttle}{HALF}
-
-\checklistitem{Throttle}{FULL}
-
-\checklistitem{Mixture}{VARY}
-
-\checklistitem{Fuel Pump}{ON}
-
-\checklistitem{Mags}{TEST BOTH}
-
-\emergencynote{IF NO RESTART}
-
-\checklistitem{Squawk}{7700}
-
-\checklistitem{Emergency}{DECLARE}
-
-\checklistitem{Fuel Shutoff}{OUT}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Mags}{OFF}
-
-\checklistitem{Master}{OFF}
-
-\checklistitem{Doors}{UNLATCH}
-
-\checklistitem{Landing}{EXECUTE}
-
-\emergencyheading{ENGINE FIRE}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Fuel Shutoff}{OUT}
-
-\checklistitem{Master}{OFF}
-
-\checklistitem{Cabin Air}{CLOSE}
-
-\checklistitem{Vents}{OPEN}
-
-\checklistitem{Speed}{INCREASE}
-
-\checklistitem{Flight}{TERMINATE}
-
-\emergencyheading{ELECTRICAL FIRE}
-
-\checklistitem{Master}{OFF}
-
-\checklistitem{Vents/Air}{CLOSE}
-
-\checklistitem{Extinguisher}{USE}
-
-\checklistitem{Vents}{OPEN}
-
-\checklistitem{Breakers}{CHECK}
-
-\checklistitem{Master}{ON IF CRITICAL}
-
-\checklistitem{Flight}{TERMINATE}
-
-\input{airport_info}
-
-\end{multicols*}
+  \include{common}
+
+  \switchheading{C172SP GROUND PROCEDURES}
+
+  \begin{multicols*}{3}
+
+    \flightheading{DISPATCH}
+
+    \begin{clitemize}
+      \checklistitem{Weather}{BRIEF}
+      \checklistitem{NOTAMs}{CHECK}
+      \checklistitem{W\&B}{CHECK}
+      \checklistitem{Perf. Reqs.}{CHECK}
+      \checklistitem{Squawks}{CHECK}
+    \end{clitemize}
+
+    \flightheading{INSPECTION}
+
+    \begin{clitemize}
+      \checklistitem{Fuel}{DRAIN, CHECK}
+      \checklistitem{AV1ATE}{CHECK}
+      \checklistitem{AROW}{CHECK}
+      \checklistitem{Avionics}{OFF}
+      \checklistitem{Master}{ON}
+      \checklistitem{Fuel Gauge}{TRUE}
+      \checklistitem{Flaps}{EXTEND}
+      \checklistitem{Electrics}{TEST}
+      \checklistitem{Electrics}{OFF}
+      \checklistitem{Master}{OFF}
+      \checklistitem{Oil}{6-8 qts}
+      \checklistitem{Exterior}{CHECK}
+      \checklistitem{Ties/Chocks}{REMOVE}
+      \checklistitem{Baggage}{CHECK}
+      \checklistitem{Walkaround}{EXECUTE}
+      \checklistitem{Seat}{ADJUST}
+    \end{clitemize}
+
+    \flightheading{START}
+
+    \begin{clitemize}
+      \checklistitem{Passengers}{BRIEF}
+      \checklistitem{Seatbelts}{CHECK}
+      \checklistitem{Circuit Breakers}{CHECK}
+      \checklistitem{Alt. Static}{CHECK}
+      \checklistitem{Fuel Shutoff}{IN}
+      \checklistitem{Fuel Selector}{BOTH}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Master}{BATT ON}
+      \checklistitem{Avionics}{FAN}
+      \checklistitem{Avionics}{OFF}
+      \checklistitem{Beacon}{ON}
+    \end{clitemize}
+
+    \flightnote{HOT:\@ SKIP PRIME}
+
+    \begin{clitemize}
+      \checklistitem{Throttle}{1"}
+      \checklistitem{Mixture}{RICH}
+      \checklistitem{Fuel Pump}{ON}
+      \checklistitem{Fuel Pump}{OFF}
+    \end{clitemize}
+
+    \flightnote{END PRIME}
+
+    \begin{clitemize}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Throttle}{SLIGHT}
+      \checklistitem{Clear Prop}{ANNOUNCE}
+      \checklistitem{Mags}{START}
+      \checklistitem{Mixture}{RICH}
+      \checklistitem{Throttle}{1000 RPM}
+      \checklistitem{Oil Pressure}{CHECK}
+      \checklistitem{Master}{ALT ON}
+      \checklistitem{Mixture}{LEAN}
+      \checklistitem{Flaps}{UP}
+      \checklistitem{Lights}{ON}
+      \checklistitem{Avionics}{ON}
+      \checklistitem{Radios}{SET}
+      \checklistitem{ATIS}{GET}
+      \checklistitem{Barometer}{SET}
+      \checklistitem{XPDR}{SET}
+      \checklistitem{Taxi Diag.}{OPEN}
+    \end{clitemize}
+
+    \flightheading{TAXI}
+
+    \begin{clitemize}
+      \checklistitem{Brakes}{TEST}
+      \checklistitem{Controls}{WIND}
+      \checklistitem{Taxi Turns}{EXECUTE}
+    \end{clitemize}
+
+    \flightheading{RUNUP}
+
+    \begin{clitemize}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Controls}{CORRECT}
+      \checklistitem{Flight Inst.}{CHECK}
+      \checklistitem{Fuel}{BOTH}
+      \checklistitem{Autopilot}{CHECK}
+      \checklistitem{Trim}{TAKEOFF}
+      \checklistitem{GPS/NAV}{CONFIG}
+      \checklistitem{Heading Bug}{SET}
+      \checklistitem{Radios}{SET}
+      \checklistitem{XPDR}{SET}
+      \checklistitem{Mixture}{RICH}
+      \checklistitem{Throttle}{1800 RPM}
+      \checklistitem{Annunciators}{CHECK}
+      \checklistitem{Vacuum}{CHECK}
+      \checklistitem{Amps/Volts}{CHECK}
+      \checklistitem{Oil}{CHECK}
+      \checklistitem{Mags}{CHECK}
+      \checklistitem{Throttle}{1000 RPM}
+      \checklistitem{Throttle Friction}{SET}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO FLIGHT}
+
+    \flightheading{SHUTDOWN}
+
+    \begin{clitemize}
+      \checklistitem{XPDR}{SET}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Electrical}{OFF}
+      \checklistitem{Avionics}{OFF}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Mags}{OFF}
+      \checklistitem{Master}{OFF}
+      \checklistitem{Fuel}{LEFT}
+      \checklistitem{Flight Plan}{CLOSE}
+    \end{clitemize}
+
+    \flightheading{SECURING}
+
+    \begin{clitemize}
+      \checklistitem{Control Lock}{SET}
+      \checklistitem{Hobbs/Tach}{NOTE}
+      \checklistitem{Squawks}{NOTE}
+      \checklistitem{Sun Shade}{REPLACE}
+      \checklistitem{Pitot Cover}{REPLACE}
+      \checklistitem{Wheels}{CHOCK}
+      \checklistitem{Ties}{TIE}
+      \checklistitem{Doors}{LOCK}
+    \end{clitemize}
+
+    \emergencyheading{FIRE ON START}
+
+    \emergencynote{IF START}
+
+    \begin{clitemize}
+      \checklistitem{Run}{5 sec}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Evacuate}{GO}
+    \end{clitemize}
+
+    \emergencynote{IF NO START}
+
+    \begin{clitemize}
+      \checklistitem{Crank}{CONTINUE}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Throttle}{FULL}
+      \checklistitem{Fuel Shutoff}{OUT}
+      \checklistitem{Evacuate}{GO}
+    \end{clitemize}
+
+  \end{multicols*}
+
+  \pagebreak
+
+  \switchheading{C172SP FLIGHT PROCEDURES}
+
+  \begin{multicols*}{3}
+
+    \flightheading{TAKEOFF BRIEF}
+
+    \begin{clitemize}
+      \checklistitem{Runway}{CHECK}
+      \checklistitem{HI}{SET TO COMPASS}
+      \checklistitem{Crosswind}{CHECK}
+      \checklistitem{Abort Speed}{NOTE}
+      \checklistitem{Technique}{NOTE}
+      \checklistitem{Flaps}{SET}
+      \checklistitem{Min. Ret. Alt.}{NOTE}
+      \checklistitem{Best Glide}{60-70}
+      \checklistitem{Time}{NOTE}
+      \checklistitem{Mixture}{RICH}
+    \end{clitemize}
+
+    \flightheading{CLIMB}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{UP}
+      \checklistitem{Mixture}{LEAN $>$3k}
+      \checklistitem{HI}{SET TO COMPASS}
+      \checklistitem{Engine Inst.}{CHECK}
+    \end{clitemize}
+
+    \flightheading{PRE-DESCENT}
+
+    \begin{clitemize}
+      \checklistitem{HI}{SET TO COMPASS}
+      \checklistitem{Engine Inst.}{CHECK}
+      \checklistitem{ATIS}{GET}
+      \checklistitem{Barometer}{SET}
+      \checklistitem{Tower}{CONTACT}
+      \checklistitem{Fuel}{BOTH}
+      \checklistitem{Mixture}{ENRICH}
+      \checklistitem{Lights}{ON}
+    \end{clitemize}
+
+    \flightheading{AFTER LANDING}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{UP}
+      \checklistitem{Trim}{TAKEOFF}
+      \checklistitem{Mixture}{LEAN}
+      \checklistitem{Taxi Diag.}{OPEN}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO GROUND}
+
+    \configheading{TAKEOFF CFGS}
+
+    \configsubheading{NORMAL}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{UP}
+      \checklistitem{Rotate}{55}
+      \checklistitem{Climb}{74}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{10}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Climb}{56 TO 50'}
+      \checklistitem{Flaps}{UP}
+    \end{clitemize}
+
+    \configsubheading{SOFT}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{10}
+      \checklistitem{Nosewheel}{LIGHT}
+      \checklistitem{Ground Effect}{60}
+      \checklistitem{Climb}{65}
+      \checklistitem{Flaps}{UP}
+    \end{clitemize}
+
+    \configheading{APPROACH CFGS}
+
+    \configsubheading{NORMAL/SOFT}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{FULL}
+      \checklistitem{Speed}{65}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \checklistitem{Flaps}{FULL}
+      \checklistitem{Speed}{60}
+    \end{clitemize}
+
+    \electricalheading{LOW VOLTAGE}
+
+    \begin{clitemize}
+      \checklistitem{Power}{GT 1000 RPM}
+      \checklistitem{Lights/Pitot}{OFF}
+      \checklistitem{Avionics}{OFF}
+      \checklistitem{Master}{ALT OFF}
+      \checklistitem{Alt}{CHECK}
+      \checklistitem{Master}{ALT ON}
+      \checklistitem{Avionics}{ESSENTIAL}
+      \checklistitem{Lights/Pitot}{ESSENTIAL}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencynote{CYCLE ONCE ONLY}
+
+    \electricalheading{OVERVOLTAGE}
+
+    \begin{clitemize}
+      \checklistitem{Master}{ALT OFF}
+      \checklistitem{Alt}{PULL}
+      \checklistitem{Avionics}{OFF}
+      \checklistitem{Lights/Pitot}{Essential}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencyheading{ENGINE FAILURE}
+
+    \begin{clitemize}
+      \checklistitem{Best Glide}{60-70}
+      \checklistitem{Landing Site}{FIND}
+      \checklistitem{Fuel Shutoff}{ON}
+      \checklistitem{Throttle}{HALF}
+      \checklistitem{Throttle}{FULL}
+      \checklistitem{Mixture}{VARY}
+      \checklistitem{Fuel Pump}{ON}
+      \checklistitem{Mags}{TEST BOTH}
+    \end{clitemize}
+
+    \emergencynote{IF NO RESTART}
+
+    \begin{clitemize}
+      \checklistitem{Squawk}{7700}
+      \checklistitem{Emergency}{DECLARE}
+      \checklistitem{Fuel Shutoff}{OUT}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Mags}{OFF}
+      \checklistitem{Master}{OFF}
+      \checklistitem{Doors}{UNLATCH}
+      \checklistitem{Landing}{EXECUTE}
+    \end{clitemize}
+
+    \emergencyheading{ENGINE FIRE}
+
+    \begin{clitemize}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Fuel Shutoff}{OUT}
+      \checklistitem{Master}{OFF}
+      \checklistitem{Cabin Air}{CLOSE}
+      \checklistitem{Vents}{OPEN}
+      \checklistitem{Speed}{INCREASE}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencyheading{ELECTRICAL FIRE}
+
+    \begin{clitemize}
+      \checklistitem{Master}{OFF}
+      \checklistitem{Vents/Air}{CLOSE}
+      \checklistitem{Extinguisher}{USE}
+      \checklistitem{Vents}{OPEN}
+      \checklistitem{Breakers}{CHECK}
+      \checklistitem{Master}{ON IF CRITICAL}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \input{airport_info}
+
+  \end{multicols*}
 
 \end{document}

@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage{calc}
+\usepackage{enumitem}
 \usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
@@ -13,392 +14,323 @@
 
 \begin{document}
 
-\include{common}
+  \include{common}
+
+  \switchheading{CITABRIA 7ECA GROUND PROCEDURES}
+
+  \begin{multicols*}{3}
+
+    \flightheading{DISPATCH}
+
+    \begin{clitemize}
+      \checklistitem{Weather}{BRIEF}
+      \checklistitem{NOTAMs}{CHECK}
+      \checklistitem{W\&B}{CHECK}
+      \checklistitem{Perf. Reqs.}{CHECK}
+      \checklistitem{Squawks}{CHECK}
+    \end{clitemize}
+
+    \flightheading{INSPECTION}
+
+    \begin{clitemize}
+      \checklistitem{Fuel}{DRAIN, CHECK}
+      \checklistitem{AV1ATE}{CHECK}
+      \checklistitem{AROW}{CHECK}
+      \checklistitem{Mags}{OFF}
+      \checklistitem{Fuel Gauges}{TRUE}
+      \checklistitem{Fuel Shutoff}{IN}
+      \checklistitem{ELT}{ARMED}
+      \checklistitem{Oil}{6 qts}
+      \checklistitem{Exterior}{CHECK}
+      \checklistitem{Ties/Chocks}{REMOVE}
+      \checklistitem{Walkaround}{EXECUTE}
+    \end{clitemize}
+
+    \flightheading{START}
+
+    \begin{clitemize}
+      \checklistitem{Passengers}{BRIEF}
+      \checklistitem{Seatbelts}{CHECK}
+      \checklistitem{Fuel Shutoff}{IN}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Electrical}{OFF}
+      \checklistitem{Door}{CLOSED}
+      \checklistitem{Carb. Heat}{OFF}
+      \checklistitem{Mixture}{RICH}
+      \checklistitem{Gas}{ON}
+    \end{clitemize}
+
+    \flightnote{HOT:\@ SKIP PRIME}
+
+    \begin{clitemize}
+      \checklistitem{Prime}{2x}
+      \checklistitem{Master Switch}{ON}
+      \checklistitem{Ignition Switch}{ON}
+      \checklistitem{Throttle}{SLIGHT}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Clear Prop}{ANNOUNCE}
+      \checklistitem{Engine}{START}
+      \checklistitem{Throttle}{1000 RPM}
+      \checklistitem{Lights}{ON}
+      \checklistitem{Radios}{SET}
+      \checklistitem{ATIS}{GET}
+      \checklistitem{Barometer}{SET}
+      \checklistitem{XPDR}{SET}
+      \checklistitem{Taxi Diag.}{OPEN}
+    \end{clitemize}
+
+    \flightheading{TAXI}
+
+    \begin{clitemize}
+      \checklistitem{Brakes}{TEST}
+      \checklistitem{Controls}{WIND}
+      \checklistitem{Taxi Turns}{EXECUTE}
+    \end{clitemize}
+
+    \flightheading{RUNUP}
+
+    \begin{clitemize}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Controls}{CORRECT}
+      \checklistitem{Trim}{TAKEOFF}
+      \checklistitem{Flight Inst.}{CHECK}
+      \checklistitem{Fuel Shutoff}{IN}
+      \checklistitem{Mixture}{RICH}
+      \checklistitem{Throttle}{1800 RPM}
+      \checklistitem{Mags}{CHECK}
+      \checklistitem{Carb}{CHECK}
+      \checklistitem{Engine Inst.}{CHECK}
+      \checklistitem{Throttle}{1000 RPM}
+      \checklistitem{Doors}{CLOSED}
+      \checklistitem{Seatbelts}{CHECK}
+      \checklistitem{Throttle Friction}{SET}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO FLIGHT}
+
+    \flightheading{SHUTDOWN}
+
+    \begin{clitemize}
+      \checklistitem{XPDR}{SET}
+      \checklistitem{Brakes}{SET}
+      \checklistitem{Electrical}{OFF}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Mags}{OFF}
+      \checklistitem{Master}{OFF}
+      \checklistitem{Flight Plan}{CLOSE}
+    \end{clitemize}
+
+    \flightheading{SECURING}
+
+    \begin{clitemize}
+      \checklistitem{Lap Belt}{STICK}
+      \checklistitem{Hobbs/Tach}{NOTE}
+      \checklistitem{Squawks}{NOTE}
+      \checklistitem{Sun Shade}{REPLACE}
+      \checklistitem{Pitot Cover}{REPLACE}
+      \checklistitem{Wheels}{CHOCK}
+      \checklistitem{Ties}{TIE}
+      \checklistitem{Doors}{LOCK}
+    \end{clitemize}
 
-\switchheading{CITABRIA 7ECA GROUND PROCEDURES}
+    \input{airport_info}
 
-\begin{multicols*}{3}
+    \emergencyheading{FIRE ON START}
+
+    \emergencynote{IF START}
+
+    \begin{clitemize}
+      \checklistitem{Run}{5 sec}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Evacuage}{GO}
+    \end{clitemize}
 
-\flightheading{DISPATCH}
+    \emergencynote{IF NO START}
 
-\checklistitem{Weather}{BRIEF}
+    \begin{clitemize}
+      \checklistitem{Crank}{CONTINUE}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Throttle}{FULL}
+      \checklistitem{Fuel Shutoff}{OUT}
+      \checklistitem{Evacuage}{GO}
+    \end{clitemize}
 
-\checklistitem{NOTAMs}{CHECK}
+  \end{multicols*}
 
-\checklistitem{W\&B}{CHECK}
+  \pagebreak
 
-\checklistitem{Perf. Reqs.}{CHECK}
+  \switchheading{CITABRIA 7ECA FLIGHT PROCEDURES}
 
-\checklistitem{Squawks}{CHECK}
+  \begin{multicols*}{3}
 
-\flightheading{INSPECTION}
+    \flightheading{TAKEOFF BRIEF}
 
-\checklistitem{Fuel}{DRAIN, CHECK}
+    \begin{clitemize}
+      \checklistitem{Runway}{CHECK}
+      \checklistitem{Crosswind}{CHECK}
+      \checklistitem{Abort Speed}{NOTE}
+      \checklistitem{Technique}{NOTE}
+      \checklistitem{Min. Ret. Alt.}{NOTE}
+      \checklistitem{Best Glide}{NOTE}
+      \checklistitem{Time}{NOTE}
+      \checklistitem{Mixture}{RICH}
+    \end{clitemize}
 
-\checklistitem{AV1ATE}{CHECK}
+    \flightheading{CLIMB}
 
-\checklistitem{AROW}{CHECK}
-
-\checklistitem{Mags}{OFF}
-
-\checklistitem{Fuel Gauges}{TRUE}
-
-\checklistitem{Fuel Shutoff}{IN}
-
-\checklistitem{ELT}{ARMED}
-
-\checklistitem{Oil}{6 qts}
-
-\checklistitem{Exterior}{CHECK}
-
-\checklistitem{Ties/Chocks}{REMOVE}
-
-\checklistitem{Walkaround}{EXECUTE}
-
-\flightheading{START}
-
-\checklistitem{Passengers}{BRIEF}
-
-\checklistitem{Seatbelts}{CHECK}
-
-\checklistitem{Fuel Shutoff}{IN}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Electrical}{OFF}
-
-\checklistitem{Door}{CLOSED}
-
-\checklistitem{Carb. Heat}{OFF}
-
-\checklistitem{Mixture}{RICH}
-
-\checklistitem{Gas}{ON}
-
-\flightnote{HOT:\@ SKIP PRIME}
-
-\checklistitem{Prime}{2x}
-
-\checklistitem{Master Switch}{ON}
-
-\checklistitem{Ignition Switch}{ON}
-
-\checklistitem{Throttle}{SLIGHT}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Clear Prop}{ANNOUNCE}
-
-\checklistitem{Engine}{START}
-
-\checklistitem{Throttle}{1000 RPM}
-
-\checklistitem{Lights}{ON}
-
-\checklistitem{Radios}{SET}
-
-\checklistitem{ATIS}{GET}
-
-\checklistitem{Barometer}{SET}
-
-\checklistitem{XPDR}{SET}
-
-\checklistitem{Taxi Diag.}{OPEN}
-
-\flightheading{TAXI}
-
-\checklistitem{Brakes}{TEST}
-
-\checklistitem{Controls}{WIND}
-
-\checklistitem{Taxi Turns}{EXECUTE}
-
-\flightheading{RUNUP}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Controls}{CORRECT}
-
-\checklistitem{Trim}{TAKEOFF}
-
-\checklistitem{Flight Inst.}{CHECK}
-
-\checklistitem{Fuel Shutoff}{IN}
-
-\checklistitem{Mixture}{RICH}
-
-\checklistitem{Throttle}{1800 RPM}
-
-\checklistitem{Mags}{CHECK}
-
-\checklistitem{Carb}{CHECK}
-
-\checklistitem{Engine Inst.}{CHECK}
-
-\checklistitem{Throttle}{1000 RPM}
-
-\checklistitem{Doors}{CLOSED}
-
-\checklistitem{Seatbelts}{CHECK}
-
-\checklistitem{Throttle Friction}{SET}
-
-\switchheading{SWITCH TO FLIGHT}
-
-\color{black}
-
-\flightheading{SHUTDOWN}
-
-\checklistitem{XPDR}{SET}
-
-\checklistitem{Brakes}{SET}
-
-\checklistitem{Electrical}{OFF}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Mags}{OFF}
-
-\checklistitem{Master}{OFF}
-
-\checklistitem{Flight Plan}{CLOSE}
-
-\flightheading{SECURING}
-
-\checklistitem{Lap Belt}{STICK}
-
-\checklistitem{Hobbs/Tach}{NOTE}
-
-\checklistitem{Squawks}{NOTE}
-
-\checklistitem{Sun Shade}{REPLACE}
-
-\checklistitem{Pitot Cover}{REPLACE}
-
-\checklistitem{Wheels}{CHOCK}
-
-\checklistitem{Ties}{TIE}
-
-\checklistitem{Doors}{LOCK}
-
-\input{airport_info}
-
-\emergencyheading{FIRE ON START}
-
-\emergencynote{IF START}
-
-\checklistitem{Run}{5 sec}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-Evacuate \dotfill
-
-\emergencynote{IF NO START}
-
-\checklistitem{Crank}{CONTINUE}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Throttle}{FULL}
-
-\checklistitem{Fuel Shutoff}{OUT}
-
-Evacuate \dotfill
-
-\end{multicols*}
-
-\pagebreak
-
-\switchheading{CITABRIA 7ECA FLIGHT PROCEDURES}
-
-\begin{multicols*}{3}
-
-\flightheading{TAKEOFF BRIEF}
-
-\checklistitem{Runway}{CHECK}
-
-\checklistitem{Crosswind}{CHECK}
-
-\checklistitem{Abort Speed}{NOTE}
-
-\checklistitem{Technique}{NOTE}
-
-\checklistitem{Min. Ret. Alt.}{NOTE}
-
-\checklistitem{Best Glide}{NOTE}
-
-\checklistitem{Time}{NOTE}
-
-\checklistitem{Mixture}{RICH}
-
-\flightheading{CLIMB}
-
-\checklistitem{Throttle}{OPEN}
-
-\flightnote{IF BELOW 5000}
-
-\checklistitem{Mixture}{RICH}
-
-\checklistitem{Engine Inst.}{CHECK}
-
-\checklistitem{Speed}{75-80}
-
-\checklistitem{Best Rate}{69}
-
-\checklistitem{Best Angle}{58}
-
-\flightheading{PRE-DESCENT}
-
-\checklistitem{Engine Inst.}{CHECK}
-
-\checklistitem{ATIS}{GET}
-
-\checklistitem{Barometer}{SET}
-
-\checklistitem{Tower}{CONTACT}
-
-\checklistitem{Mixture}{ENRICH}
-
-\checklistitem{Lights}{ON}
-
-\flightheading{AFTER LANDING}
-
-\checklistitem{Trim}{TAKEOFF}
-
-\checklistitem{Mixture}{LEAN}
-
-\checklistitem{Taxi Diag.}{OPEN}
-
-\checklistitem{Carb. Heat}{OFF}
-
-\switchheading{SWITCH TO GROUND}
-
-\configheading{TAKEOFF CFGS}
-
-\configsubheading{NORMAL}
-
-\checklistitem{Rotate}{55}
-
-\checklistitem{Climb}{75}
-
-\configsubheading{SHORT}
-
-\checklistitem{Rotate}{50}
-
-\checklistitem{Climb}{58}
-
-\configsubheading{SOFT}
-
-\checklistitem{Attitude}{TAIL LOW}
-
-\checklistitem{Rotate}{55}
-
-\checklistitem{Liftoff}{ASSIST}
-
-\checklistitem{After Liftoff}{LEVEL}
-
-\checklistitem{Climb}{75}
-
-\configheading{APPROACH CFGS}
-
-\configsubheading{NORMAL/SHORT}
-
-\checklistitem{Speed}{60-70}
-
-\checklistitem{Landing}{MAINS}
-
-\configsubheading{SOFT}
-
-\checklistitem{Speed}{60-70}
-
-\checklistitem{Landing}{FULL STALL}
-
-\electricalheading{LOW VOLTAGE}
-
-\checklistitem{Master}{CYCLE}
-
-\checklistitem{Nonessentials}{OFF}
-
-\checklistitem{Flight}{TERMINATE}
-
-\electricalheading{OVERVOLTAGE}
-
-\checklistitem{Master}{CYCLE}
-
-\checklistitem{Flight}{TERMINATE}
-
-\emergencyheading{ENGINE FAILURE}
-
-\checklistitem{Best Glide}{65 min}
-
-\checklistitem{Fuel Shutoff}{ON}
-
-\checklistitem{Throttle}{HALF}
-
-\checklistitem{Throttle}{FULL}
-
-\checklistitem{Mixture}{VARY}
-
-\checklistitem{Primer}{TRY}
-
-\checklistitem{Carb. Heat}{ON}
-
-\checklistitem{Mags}{TEST BOTH}
-
-\emergencynote{IF NO RESTART}
-
-\checklistitem{Squawk}{7700}
-
-\checklistitem{Emergency}{DECLARE}
-
-\checklistitem{Fuel Shutoff}{OUT}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Mags}{OFF}
-
-\checklistitem{Landing}{EXECUTE}
-
-\emergencyheading{ENGINE FIRE}
-
-\checklistitem{Mixture}{IDLE C/O}
-
-\checklistitem{Fuel Shutoff}{OUT}
-
-\checklistitem{Switches}{ALL OFF}
-
-\checklistitem{Cabin Heat}{OFF}
-
-\checklistitem{Extinguisher}{USE}
-
-\checklistitem{Flight}{TERMINATE}
-
-\emergencyheading{ELECTRICAL FIRE}
-
-\checklistitem{Electrical}{OFF}
-
-\checklistitem{Vents}{OPEN}
-
-\checklistitem{Extinguisher}{USE}
-
-\emergencynote{IF FIRE CONTINUES}
-
-\checklistitem{Flight}{TERMINATE}
-
-\columnbreak
-
-\noteheading
-
-\begin{itemize}
-\item All airspeeds in MPH
-
-\item Carb.\ heat always on if icing suspected, indicated by gradual loss of RPM
-
-\item Only use rudder on takeoff and landing (no brakes)
-
-\item Mixture should be leaned at any altitude when under 75\% power. Lean until engine roughness, then enrichen to smoothness.
-\end{itemize}
-
-\end{multicols*}
+    \begin{clitemize}
+      \checklistitem{Throttle}{OPEN}
+    \end{clitemize}
+
+    \flightnote{IF BELOW 5000}
+
+    \begin{clitemize}
+      \checklistitem{Mixture}{RICH}
+      \checklistitem{Engine Inst.}{CHECK}
+      \checklistitem{Speed}{75-80}
+      \checklistitem{Best Rate}{69}
+      \checklistitem{Best Angle}{58}
+    \end{clitemize}
+
+    \flightheading{PRE-DESCENT}
+
+    \begin{clitemize}
+      \checklistitem{Engine Inst.}{CHECK}
+      \checklistitem{ATIS}{GET}
+      \checklistitem{Barometer}{SET}
+      \checklistitem{Tower}{CONTACT}
+      \checklistitem{Mixture}{ENRICH}
+      \checklistitem{Lights}{ON}
+    \end{clitemize}
+
+    \flightheading{AFTER LANDING}
+
+    \begin{clitemize}
+      \checklistitem{Trim}{TAKEOFF}
+      \checklistitem{Mixture}{LEAN}
+      \checklistitem{Taxi Diag.}{OPEN}
+      \checklistitem{Carb. Heat}{OFF}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO GROUND}
+
+    \configheading{TAKEOFF CFGS}
+
+    \configsubheading{NORMAL}
+
+    \begin{clitemize}
+      \checklistitem{Rotate}{55}
+      \checklistitem{Climb}{75}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \checklistitem{Rotate}{50}
+      \checklistitem{Climb}{58}
+    \end{clitemize}
+
+    \configsubheading{SOFT}
+
+    \begin{clitemize}
+      \checklistitem{Attitude}{TAIL LOW}
+      \checklistitem{Rotate}{55}
+      \checklistitem{Liftoff}{ASSIST}
+      \checklistitem{After Liftoff}{LEVEL}
+      \checklistitem{Climb}{75}
+    \end{clitemize}
+
+    \configheading{APPROACH CFGS}
+
+    \configsubheading{NORMAL/SHORT}
+
+    \begin{clitemize}
+      \checklistitem{Speed}{60-70}
+      \checklistitem{Landing}{MAINS}
+    \end{clitemize}
+
+    \configsubheading{SOFT}
+
+    \begin{clitemize}
+      \checklistitem{Speed}{60-70}
+      \checklistitem{Landing}{FULL STALL}
+    \end{clitemize}
+
+    \electricalheading{LOW VOLTAGE}
+
+    \begin{clitemize}
+      \checklistitem{Master}{CYCLE}
+      \checklistitem{Nonessentials}{OFF}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \electricalheading{OVERVOLTAGE}
+
+    \begin{clitemize}
+      \checklistitem{Master}{CYCLE}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencyheading{ENGINE FAILURE}
+
+    \begin{clitemize}
+      \checklistitem{Best Glide}{65 min}
+      \checklistitem{Fuel Shutoff}{ON}
+      \checklistitem{Throttle}{HALF}
+      \checklistitem{Throttle}{FULL}
+      \checklistitem{Mixture}{VARY}
+      \checklistitem{Primer}{TRY}
+      \checklistitem{Carb. Heat}{ON}
+      \checklistitem{Mags}{TEST BOTH}
+    \end{clitemize}
+
+    \emergencynote{IF NO RESTART}
+
+    \begin{clitemize}
+      \checklistitem{Squawk}{7700}
+      \checklistitem{Emergency}{DECLARE}
+      \checklistitem{Fuel Shutoff}{OUT}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Mags}{OFF}
+      \checklistitem{Landing}{EXECUTE}
+    \end{clitemize}
+
+    \emergencyheading{ENGINE FIRE}
+
+    \begin{clitemize}
+      \checklistitem{Mixture}{IDLE C/O}
+      \checklistitem{Fuel Shutoff}{OUT}
+      \checklistitem{Switches}{ALL OFF}
+      \checklistitem{Cabin Heat}{OFF}
+      \checklistitem{Extinguisher}{USE}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencyheading{ELECTRICAL FIRE}
+
+    \begin{clitemize}
+      \checklistitem{Electrical}{OFF}
+      \checklistitem{Vents}{OPEN}
+      \checklistitem{Extinguisher}{USE}
+    \end{clitemize}
+
+    \emergencynote{IF FIRE CONTINUES}
+
+    \begin{clitemize}
+      \checklistitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \columnbreak
+
+    \noteheading
+
+    \begin{itemize}
+      \item All airspeeds in MPH
+      \item Carb.\ heat always on if icing suspected, indicated by gradual loss of RPM
+      \item Only use rudder on takeoff and landing (no brakes)
+      \item Mixture should be leaned at any altitude when under 75\% power. Lean until engine roughness, then enrichen to smoothness.
+    \end{itemize}
+
+  \end{multicols*}
 
 \end{document}
