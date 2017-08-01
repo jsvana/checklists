@@ -5,11 +5,9 @@
 \fontfamily{phv}\selectfont
 
 \newenvironment{clitemize}
-{
-	\begin{itemize}[topsep=0pt,noitemsep,leftmargin=1.55em]
-}
+{\begin{itemize}[topsep=0pt,noitemsep,leftmargin=1.55em,label={}]}
 {\end{itemize}}
-\newcommand{\checklistitem}[2]{\item[]#1 \dotfill \textbf{#2}}
+\newcommand{\checklistitem}[2]{\item#1 \dotfill \textbf{#2}}
 
 \newcommand{\columnnote}[2]{\leavevmode\color{white}\colorbox{#1}{\makebox[\columnwidth-7mm]{#2}}\leavevmode\color{black}}
 \newcommand{\emergencynote}[1]{\columnnote{red!80!black}{#1}}
@@ -22,6 +20,6 @@
 \newcommand{\configsubheading}[1]{\columnheading{magenta!60}{#1}}
 \newcommand{\emergencyheading}[1]{\columnheading{red!80}{#1}}
 \newcommand{\electricalheading}[1]{\columnheading{yellow!80!orange}{#1}}
-\newcommand{\airportheading}[1]{\columnheading{cyan}{#1}}
-\newcommand{\airportsubheading}[1]{\columnheading{cyan!70}{#1}}
+\newcommand{\infoheading}[1]{\columnheading{cyan}{#1}}
+\newcommand{\infosubheading}[1]{\columnheading{cyan!70}{#1}}
 \newcommand{\noteheading}{\columnheading{orange!80}{NOTES}}
