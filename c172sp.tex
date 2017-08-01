@@ -13,475 +13,455 @@
 
 \begin{document}
 
-\pagenumbering{gobble}
+\include{common}
 
-\setlength{\columnsep}{0pt}
-
-\fontfamily{phv}\selectfont
-
-\newenvironment{groupheading}[3]
-{
-\color{#1}
-\colorbox{#2}{\makebox[\columnwidth-7mm]{\textbf{#3}}}
-}
-{
-\color{black}
-}
-
-\def\arraystretch{1.3}
-
-\begin{groupheading}{white}{black}{C172SP GROUND PROCEDURES}
-\end{groupheading}
+\switchheading{C172SP GROUND PROCEDURES}
 
 \begin{multicols*}{3}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{DISPATCH}}}
+\flightheading{DISPATCH}
 
-Weather \dotfill \textbf{BRIEF}
+\checklistitem{Weather}{BRIEF}
 
-NOTAMs \dotfill \textbf{CHECK}
+\checklistitem{NOTAMs}{CHECK}
 
-W\&B \dotfill \textbf{CHECK}
+\checklistitem{W\&B}{CHECK}
 
-Perf. Reqs. \dotfill \textbf{CHECK}
+\checklistitem{Perf. Reqs.}{CHECK}
 
-Squawks \dotfill \textbf{CHECK}
+\checklistitem{Squawks}{CHECK}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{INSPECTION}}}
+\flightheading{INSPECTION}
 
-Fuel \dotfill \textbf{DRAIN, CHECK}
+\checklistitem{Fuel}{DRAIN, CHECK}
 
-AV1ATE \dotfill \textbf{CHECK}
+\checklistitem{AV1ATE}{CHECK}
 
-AROW \dotfill \textbf{CHECK}
+\checklistitem{AROW}{CHECK}
 
-Avionics \dotfill \textbf{OFF}
+\checklistitem{Avionics}{OFF}
 
-Master \dotfill \textbf{ON}
+\checklistitem{Master}{ON}
 
-Fuel Gauge \dotfill \textbf{TRUE}
+\checklistitem{Fuel Gauge}{TRUE}
 
-Flaps \dotfill \textbf{EXTEND}
+\checklistitem{Flaps}{EXTEND}
 
-Electrics \dotfill \textbf{TEST}
+\checklistitem{Electrics}{TEST}
 
-Electrics \dotfill \textbf{OFF}
+\checklistitem{Electrics}{OFF}
 
-Master \dotfill \textbf{OFF}
+\checklistitem{Master}{OFF}
 
-Oil \dotfill \textbf{6-8 qts}
+\checklistitem{Oil}{6-8 qts}
 
-Exterior \dotfill \textbf{CHECK}
+\checklistitem{Exterior}{CHECK}
 
-Ties/Chocks \dotfill \textbf{REMOVE}
+\checklistitem{Ties/Chocks}{REMOVE}
 
-Baggage \dotfill \textbf{CHECK}
+\checklistitem{Baggage}{CHECK}
 
-Walkaround \dotfill \textbf{EXECUTE}
+\checklistitem{Walkaround}{EXECUTE}
 
-Seat \dotfill \textbf{ADJUST}
+\checklistitem{Seat}{ADJUST}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{START}}}
+\flightheading{START}
 
-Passengers \dotfill \textbf{BRIEF}
+\checklistitem{Passengers}{BRIEF}
 
-Seatbelts \dotfill \textbf{CHECK}
+\checklistitem{Seatbelts}{CHECK}
 
-Circuit Breakers \dotfill \textbf{CHECK}
+\checklistitem{Circuit Breakers}{CHECK}
 
-Alt. Static \dotfill \textbf{CHECK}
+\checklistitem{Alt. Static}{CHECK}
 
-Fuel Shutoff \dotfill \textbf{IN}
+\checklistitem{Fuel Shutoff}{IN}
 
-Fuel Selector \dotfill \textbf{BOTH}
+\checklistitem{Fuel Selector}{BOTH}
 
-Brakes \dotfill \textbf{SET}
+\checklistitem{Brakes}{SET}
 
-Master \dotfill \textbf{BATT ON}
+\checklistitem{Master}{BATT ON}
 
-Avionics \dotfill \textbf{FAN}
+\checklistitem{Avionics}{FAN}
 
-Avionics \dotfill \textbf{OFF}
+\checklistitem{Avionics}{OFF}
 
-Beacon \dotfill \textbf{ON}
+\checklistitem{Beacon}{ON}
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{HOT:\@ SKIP PRIME}}
+\flightnote{HOT:\@ SKIP PRIME}
 
-Throttle \dotfill \textbf{1"}
+\checklistitem{Throttle}{1"}
 
-Mixture \dotfill \textbf{RICH}
+\checklistitem{Mixture}{RICH}
 
-Fuel Pump \dotfill \textbf{ON}
+\checklistitem{Fuel Pump}{ON}
 
-Fuel Pump \dotfill \textbf{OFF}
+\checklistitem{Fuel Pump}{OFF}
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{END PRIME}}
+\flightnote{END PRIME}
 
-Mixture \dotfill \textbf{IDLE C/O}
+\checklistitem{Mixture}{IDLE C/O}
 
-Throttle \dotfill \textbf{SLIGHT}
+\checklistitem{Throttle}{SLIGHT}
 
-Clear Prop \dotfill \textbf{ANNOUNCE}
+\checklistitem{Clear Prop}{ANNOUNCE}
 
-Mags \dotfill \textbf{START}
+\checklistitem{Mags}{START}
 
-Mixture \dotfill \textbf{RICH}
+\checklistitem{Mixture}{RICH}
 
-Throttle \dotfill \textbf{1000 RPM}
+\checklistitem{Throttle}{1000 RPM}
 
-Oil Pressure \dotfill \textbf{CHECK}
+\checklistitem{Oil Pressure}{CHECK}
 
-Master \dotfill \textbf{ALT ON}
+\checklistitem{Master}{ALT ON}
 
-Mixture \dotfill \textbf{LEAN}
+\checklistitem{Mixture}{LEAN}
 
-Flaps \dotfill \textbf{UP}
+\checklistitem{Flaps}{UP}
 
-Lights \dotfill \textbf{ON}
+\checklistitem{Lights}{ON}
 
-Avionics \dotfill \textbf{ON}
+\checklistitem{Avionics}{ON}
 
-Radios \dotfill \textbf{SET}
+\checklistitem{Radios}{SET}
 
-ATIS \dotfill \textbf{GET}
+\checklistitem{ATIS}{GET}
 
-Barometer \dotfill \textbf{SET}
+\checklistitem{Barometer}{SET}
 
-XPDR \dotfill \textbf{SET}
+\checklistitem{XPDR}{SET}
 
-Taxi Diag. \dotfill \textbf{OPEN}
+\checklistitem{Taxi Diag.}{OPEN}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{TAXI}}}
+\flightheading{TAXI}
 
-Brakes \dotfill \textbf{TEST}
+\checklistitem{Brakes}{TEST}
 
-Controls \dotfill \textbf{WIND}
+\checklistitem{Controls}{WIND}
 
-Taxi Turns \dotfill \textbf{EXECUTE}
+\checklistitem{Taxi Turns}{EXECUTE}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{RUNUP}}}
+\flightheading{RUNUP}
 
-Brakes \dotfill \textbf{SET}
+\checklistitem{Brakes}{SET}
 
-Controls \dotfill \textbf{CORRECT}
+\checklistitem{Controls}{CORRECT}
 
-Flight Inst. \dotfill \textbf{CHECK}
+\checklistitem{Flight Inst.}{CHECK}
 
-Fuel \dotfill \textbf{BOTH}
+\checklistitem{Fuel}{BOTH}
 
-Autopilot \dotfill \textbf{CHECK}
+\checklistitem{Autopilot}{CHECK}
 
-Trim \dotfill \textbf{TAKEOFF}
+\checklistitem{Trim}{TAKEOFF}
 
-GPS/NAV \dotfill \textbf{CONFIG}
+\checklistitem{GPS/NAV}{CONFIG}
 
-Heading Bug \dotfill \textbf{SET}
+\checklistitem{Heading Bug}{SET}
 
-Radios \dotfill \textbf{SET}
+\checklistitem{Radios}{SET}
 
-XPDR \dotfill \textbf{SET}
+\checklistitem{XPDR}{SET}
 
-Mixture \dotfill \textbf{RICH}
+\checklistitem{Mixture}{RICH}
 
-Throttle \dotfill \textbf{1800 RPM}
+\checklistitem{Throttle}{1800 RPM}
 
-Annunciators \dotfill \textbf{CHECK}
+\checklistitem{Annunciators}{CHECK}
 
-Vacuum \dotfill \textbf{CHECK}
+\checklistitem{Vacuum}{CHECK}
 
-Amps/Volts \dotfill \textbf{CHECK}
+\checklistitem{Amps/Volts}{CHECK}
 
-Oil \dotfill \textbf{CHECK}
+\checklistitem{Oil}{CHECK}
 
-Mags \dotfill \textbf{CHECK}
+\checklistitem{Mags}{CHECK}
 
-Throttle \dotfill \textbf{1000 RPM}
+\checklistitem{Throttle}{1000 RPM}
 
-Throttle Friction \dotfill \textbf{SET} \\
+\checklistitem{Throttle Friction}{SET}
 
-\begin{groupheading}{white}{black}{SWITCH TO FLIGHT}
-\end{groupheading}
+\switchheading{SWITCH TO FLIGHT}
 
-\color{black}
+\flightheading{SHUTDOWN}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{SHUTDOWN}}}
+\checklistitem{XPDR}{SET}
 
-XPDR \dotfill \textbf{SET}
+\checklistitem{Brakes}{SET}
 
-Brakes \dotfill \textbf{SET}
+\checklistitem{Electrical}{OFF}
 
-Electrical \dotfill \textbf{OFF}
+\checklistitem{Avionics}{OFF}
 
-Avionics \dotfill \textbf{OFF}
+\checklistitem{Mixture}{IDLE C/O}
 
-Mixture \dotfill \textbf{IDLE C/O}
+\checklistitem{Mags}{OFF}
 
-Mags \dotfill \textbf{OFF}
+\checklistitem{Master}{OFF}
 
-Master \dotfill \textbf{OFF}
+\checklistitem{Fuel}{LEFT}
 
-Fuel \dotfill \textbf{LEFT}
+\checklistitem{Flight Plan}{CLOSE}
 
-Flight Plan \dotfill \textbf{CLOSE}
+\flightheading{SECURING}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{SECURING}}}
+\checklistitem{Control Lock}{SET}
 
-Control Lock \dotfill \textbf{SET}
+\checklistitem{Hobbs/Tach}{NOTE}
 
-Hobbs/Tach \dotfill \textbf{NOTE}
+\checklistitem{Squawks}{NOTE}
 
-Squawks \dotfill \textbf{NOTE}
+\checklistitem{Sun Shade}{REPLACE}
 
-Sun Shade \dotfill \textbf{REPLACE}
+\checklistitem{Pitot Cover}{REPLACE}
 
-Pitot Cover \dotfill \textbf{REPLACE}
+\checklistitem{Wheels}{CHOCK}
 
-Wheels \dotfill \textbf{CHOCK}
+\checklistitem{Ties}{TIE}
 
-Ties \dotfill \textbf{TIE}
+\checklistitem{Doors}{LOCK}
 
-Doors \dotfill \textbf{LOCK} \\
+\emergencyheading{FIRE ON START}
 
-\colorbox{red!80}{\makebox[\columnwidth-7mm]{\textbf{FIRE ON START}}}
+\emergencynote{IF START}
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{IF START}}
+\checklistitem{Run}{5 sec}
 
-Run \dotfill \textbf{5 sec}
-
-Mixture \dotfill \textbf{IDLE C/O}
+\checklistitem{Mixture}{IDLE C/O}
 
 Evacuate \dotfill
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{IF NO START}}
+\emergencynote{IF NO START}
 
-Crank \dotfill \textbf{CONTINUE}
+\checklistitem{Crank}{CONTINUE}
 
-Mixture \dotfill \textbf{IDLE C/O}
+\checklistitem{Mixture}{IDLE C/O}
 
-Throttle \dotfill \textbf{FULL}
+\checklistitem{Throttle}{FULL}
 
-Fuel Shutoff \dotfill \textbf{OUT}
+\checklistitem{Fuel Shutoff}{OUT}
 
-Evacuate \dotfill \\
+Evacuate \dotfill
 
 \end{multicols*}
 
 \pagebreak
 
-\begin{groupheading}{white}{black}{C172SP FLIGHT PROCEDURES}
-\end{groupheading}
+\switchheading{C172SP FLIGHT PROCEDURES}
+
 \begin{multicols*}{3}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{TAKEOFF BRIEF}}}
+\flightheading{TAKEOFF BRIEF}
 
-Runway \dotfill \textbf{CHECK}
+\checklistitem{Runway}{CHECK}
 
-HI \dotfill \textbf{SET TO COMPASS}
+\checklistitem{HI}{SET TO COMPASS}
 
-Crosswind \dotfill \textbf{CHECK}
+\checklistitem{Crosswind}{CHECK}
 
-Abort Speed \dotfill \textbf{NOTE}
+\checklistitem{Abort Speed}{NOTE}
 
-Technique \dotfill \textbf{NOTE}
+\checklistitem{Technique}{NOTE}
 
-Flaps \dotfill \textbf{SET}
+\checklistitem{Flaps}{SET}
 
-Min. Ret. Alt. \dotfill \textbf{NOTE}
+\checklistitem{Min. Ret. Alt.}{NOTE}
 
-Best Glide \dotfill \textbf{60-70}
+\checklistitem{Best Glide}{60-70}
 
-Time \dotfill \textbf{NOTE}
+\checklistitem{Time}{NOTE}
 
-Mixture \dotfill \textbf{RICH}
+\checklistitem{Mixture}{RICH}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{CLIMB}}}
+\flightheading{CLIMB}
 
-Flaps \dotfill \textbf{UP}
+\checklistitem{Flaps}{UP}
 
-Mixture \dotfill \textbf{LEAN $>$3k}
+\checklistitem{Mixture}{LEAN $>$3k}
 
-HI \dotfill \textbf{SET TO COMPASS}
+\checklistitem{HI}{SET TO COMPASS}
 
-Engine Inst. \dotfill \textbf{CHECK}
+\checklistitem{Engine Inst.}{CHECK}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{PRE-DESCENT}}}
+\flightheading{PRE-DESCENT}
 
-HI \dotfill \textbf{SET TO COMPASS}
+\checklistitem{HI}{SET TO COMPASS}
 
-Engine Inst. \dotfill \textbf{CHECK}
+\checklistitem{Engine Inst.}{CHECK}
 
-ATIS \dotfill \textbf{GET}
+\checklistitem{ATIS}{GET}
 
-Barometer \dotfill \textbf{SET}
+\checklistitem{Barometer}{SET}
 
-Tower \dotfill \textbf{CONTACT}
+\checklistitem{Tower}{CONTACT}
 
-Fuel \dotfill \textbf{BOTH}
+\checklistitem{Fuel}{BOTH}
 
-Mixture \dotfill \textbf{ENRICH}
+\checklistitem{Mixture}{ENRICH}
 
-Lights \dotfill \textbf{ON}
+\checklistitem{Lights}{ON}
 
-\colorbox{green!80!red}{\makebox[\columnwidth-7mm]{\textbf{AFTER LANDING}}}
+\flightheading{AFTER LANDING}
 
-Flaps \dotfill \textbf{UP}
+\checklistitem{Flaps}{UP}
 
-Trim \dotfill \textbf{TAKEOFF}
+\checklistitem{Trim}{TAKEOFF}
 
-Mixture \dotfill \textbf{LEAN}
+\checklistitem{Mixture}{LEAN}
 
-Taxi Diag. \dotfill \textbf{OPEN}
+\checklistitem{Taxi Diag.}{OPEN}
 
-\begin{groupheading}{white}{black}{SWITCH TO GROUND}
-\end{groupheading}
+\switchheading{SWITCH TO GROUND}
 
-\colorbox{magenta}{\makebox[\columnwidth-7mm]{\textbf{TAKEOFF CFGS}}}
+\configheading{TAKEOFF CFGS}
 
-\colorbox{magenta!60}{\makebox[\columnwidth-7mm]{\textbf{NORMAL}}}
+\configsubheading{NORMAL}
 
-Flaps \dotfill \textbf{UP}
+\checklistitem{Flaps}{UP}
 
-Rotate \dotfill \textbf{55}
+\checklistitem{Rotate}{55}
 
-Climb \dotfill \textbf{74}
+\checklistitem{Climb}{74}
 
-\colorbox{magenta!60}{\makebox[\columnwidth-7mm]{\textbf{SHORT}}}
+\configsubheading{SHORT}
 
-Flaps \dotfill \textbf{10}
+\checklistitem{Flaps}{10}
 
-Brakes \dotfill \textbf{SET}
+\checklistitem{Brakes}{SET}
 
-Climb \dotfill \textbf{56 TO 50'}
+\checklistitem{Climb}{56 TO 50'}
 
-Flaps \dotfill \textbf{UP}
+\checklistitem{Flaps}{UP}
 
-\colorbox{magenta!60}{\makebox[\columnwidth-7mm]{\textbf{SOFT}}}
+\configsubheading{SOFT}
 
-Flaps \dotfill \textbf{10}
+\checklistitem{Flaps}{10}
 
-Nosewheel \dotfill \textbf{LIGHT}
+\checklistitem{Nosewheel}{LIGHT}
 
-Ground Effect \dotfill \textbf{60}
+\checklistitem{Ground Effect}{60}
 
-Climb \dotfill \textbf{65}
+\checklistitem{Climb}{65}
 
-Flaps \dotfill \textbf{UP}
+\checklistitem{Flaps}{UP}
 
-\colorbox{magenta}{\makebox[\columnwidth-7mm]{\textbf{APPROACH CFGS}}}
+\configheading{APPROACH CFGS}
 
-\colorbox{magenta!60}{\makebox[\columnwidth-7mm]{\textbf{NORMAL/SOFT}}}
+\configsubheading{NORMAL/SOFT}
 
-Flaps \dotfill \textbf{FULL}
+\checklistitem{Flaps}{FULL}
 
-Speed \dotfill \textbf{65}
+\checklistitem{Speed}{65}
 
-\colorbox{magenta!60}{\makebox[\columnwidth-7mm]{\textbf{SHORT}}}
+\configsubheading{SHORT}
 
-Flaps \dotfill \textbf{FULL}
+\checklistitem{Flaps}{FULL}
 
-Speed \dotfill \textbf{60}
+\checklistitem{Speed}{60}
 
-\colorbox{yellow!80!orange}{\makebox[\columnwidth-7mm]{\textbf{LOW VOLTAGE}}}
+\electricalheading{LOW VOLTAGE}
 
-Power \dotfill \textbf{GT 1000 RPM}
+\checklistitem{Power}{GT 1000 RPM}
 
-Lights/Pitot \dotfill \textbf{OFF}
+\checklistitem{Lights/Pitot}{OFF}
 
-Avionics \dotfill \textbf{OFF}
+\checklistitem{Avionics}{OFF}
 
-Master \dotfill \textbf{ALT OFF}
+\checklistitem{Master}{ALT OFF}
 
-Alt.\ Breaker \dotfill \textbf{CHECK}
+\checklistitem{Alt}{CHECK}
 
-Master \dotfill \textbf{ALT ON}
+\checklistitem{Master}{ALT ON}
 
-Avionics \dotfill \textbf{ESSENTIAL}
+\checklistitem{Avionics}{ESSENTIAL}
 
-Lights/Pitot \dotfill \textbf{ESSENTIAL}
+\checklistitem{Lights/Pitot}{ESSENTIAL}
 
-Flight \dotfill \textbf{TERMINATE}
+\checklistitem{Flight}{TERMINATE}
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{CYCLE ONCE ONLY}}
+\emergencynote{CYCLE ONCE ONLY}
 
-\colorbox{yellow!80!orange}{\makebox[\columnwidth-7mm]{\textbf{OVERVOLTAGE}}}
+\electricalheading{OVERVOLTAGE}
 
-Master \dotfill \textbf{ALT OFF}
+\checklistitem{Master}{ALT OFF}
 
-Alt.\ Breaker \dotfill \textbf{PULL}
+\checklistitem{Alt}{PULL}
 
-Avionics \dotfill \textbf{OFF}
+\checklistitem{Avionics}{OFF}
 
-Lights/Pitot \dotfill \textbf{Essential}
+\checklistitem{Lights/Pitot}{Essential}
 
-Flight \dotfill \textbf{TERMINATE}
+\checklistitem{Flight}{TERMINATE}
 
-\colorbox{red!80}{\makebox[\columnwidth-7mm]{\textbf{ENGINE FAILURE}}}
+\emergencyheading{ENGINE FAILURE}
 
-Best Glide \dotfill \textbf{60-70}
+\checklistitem{Best Glide}{60-70}
 
-Landing Site \dotfill \textbf{FIND}
+\checklistitem{Landing Site}{FIND}
 
-Fuel Shutoff \dotfill \textbf{ON}
+\checklistitem{Fuel Shutoff}{ON}
 
-Throttle \dotfill \textbf{HALF}
+\checklistitem{Throttle}{HALF}
 
-Throttle \dotfill \textbf{FULL}
+\checklistitem{Throttle}{FULL}
 
-Mixture \dotfill \textbf{VARY}
+\checklistitem{Mixture}{VARY}
 
-Fuel Pump \dotfill \textbf{ON}
+\checklistitem{Fuel Pump}{ON}
 
-Mags \dotfill \textbf{TEST BOTH}
+\checklistitem{Mags}{TEST BOTH}
 
-\colorbox{orange!80}{\makebox[\columnwidth-7mm]{IF NO RESTART}}
+\emergencynote{IF NO RESTART}
 
-Squawk \dotfill \textbf{7700}
+\checklistitem{Squawk}{7700}
 
-Emergency \dotfill \textbf{DECLARE}
+\checklistitem{Emergency}{DECLARE}
 
-Fuel Shutoff \dotfill \textbf{OUT}
+\checklistitem{Fuel Shutoff}{OUT}
 
-Mixture \dotfill \textbf{IDLE C/O}
+\checklistitem{Mixture}{IDLE C/O}
 
-Mags \dotfill \textbf{OFF}
+\checklistitem{Mags}{OFF}
 
-Master \dotfill \textbf{OFF}
+\checklistitem{Master}{OFF}
 
-Doors \dotfill \textbf{UNLATCH}
+\checklistitem{Doors}{UNLATCH}
 
-Landing \dotfill \textbf{EXECUTE}
+\checklistitem{Landing}{EXECUTE}
 
-\colorbox{red!80}{\makebox[\columnwidth-7mm]{\textbf{ENGINE FIRE}}}
+\emergencyheading{ENGINE FIRE}
 
-Mixture \dotfill \textbf{IDLE C/O}
+\checklistitem{Mixture}{IDLE C/O}
 
-Fuel Shutoff \dotfill \textbf{OUT}
+\checklistitem{Fuel Shutoff}{OUT}
 
-Master \dotfill \textbf{OFF}
+\checklistitem{Master}{OFF}
 
-Cabin Air \dotfill \textbf{CLOSE}
+\checklistitem{Cabin Air}{CLOSE}
 
-Vents \dotfill \textbf{OPEN}
+\checklistitem{Vents}{OPEN}
 
-Speed \dotfill \textbf{INCREASE}
+\checklistitem{Speed}{INCREASE}
 
-Flight \dotfill \textbf{TERMINATE}
+\checklistitem{Flight}{TERMINATE}
 
-\colorbox{red!80}{\makebox[\columnwidth-7mm]{\textbf{ELECTRIC FIRE}}}
+\emergencyheading{ELECTRICAL FIRE}
 
-Master \dotfill \textbf{OFF}
+\checklistitem{Master}{OFF}
 
-Vents/Air \dotfill \textbf{CLOSE}
+\checklistitem{Vents/Air}{CLOSE}
 
-Extinguisher \dotfill \textbf{USE}
+\checklistitem{Extinguisher}{USE}
 
-Vents \dotfill \textbf{OPEN}
+\checklistitem{Vents}{OPEN}
 
-Breakers \dotfill \textbf{CHECK}
+\checklistitem{Breakers}{CHECK}
 
-Master \dotfill \textbf{ON IF CRITICAL}
+\checklistitem{Master}{ON IF CRITICAL}
 
-Flight \dotfill \textbf{TERMINATE}
+\checklistitem{Flight}{TERMINATE}
 
 \input{airport_info}
 
