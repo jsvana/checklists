@@ -11,6 +11,9 @@
 {\end{itemize}}
 \newcommand{\checklistitem}[2]{\item#1 \dotfill \textbf{#2}}
 
+\newlist{packlist}{itemize}{1}
+\setlist[packlist]{noitemsep,topsep=0pt,leftmargin=1.55em,label=$\square$}
+
 \newcommand{\columnnote}[2]{\leavevmode\color{white}\colorbox{#1}{\makebox[\columnwidth]{#2}}\leavevmode\color{black}}
 \newcommand{\emergencynote}[1]{\columnnote{red!80!black}{#1}}
 \newcommand{\flightnote}[1]{\columnnote{green!60!black}{#1}}
@@ -22,6 +25,8 @@
 \newcommand{\configsubheading}[1]{\columnheading{gray!60}{#1}}
 \newcommand{\emergencyheading}[1]{\columnheading{red!80}{#1}}
 \newcommand{\electricalheading}[1]{\columnheading{yellow!80!orange}{#1}}
-\newcommand{\infoheading}[1]{\columnheading{cyan}{#1}}
+\newcommand{\infoheading}[1]{\columnheading{cyan!80!red}{#1}}
 \newcommand{\infosubheading}[1]{\columnheading{cyan!70}{#1}}
 \newcommand{\noteheading}{\columnheading{orange!80}{NOTES}}
+\newcommand{\titleheading}[1]{\switchheading{#1}}
+\newcommand{\typeheading}[1]{\columnheading{magenta}{#1}}
