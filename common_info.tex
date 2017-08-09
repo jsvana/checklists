@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{amssymb}
 \usepackage{calc}
 \usepackage{enumitem}
 \usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
@@ -22,7 +23,7 @@
 
     \flightheading{PASSENGER BRIEF}
 
-    \begin{clitemize}
+    \begin{packlist}
       \item PIC and Responsibilities
       \item Flight Plan
       \item Seatbelts
@@ -32,11 +33,11 @@
       \item Exits and Equipment
       \item Traffic and Talking
       \item Questions
-    \end{clitemize}
+    \end{packlist}
 
     \infoheading{FLIGHT BAG}
 
-    \begin{clitemize}
+    \begin{packlist}
       \item Clipboard
       \item Small Legal Pad
       \item SF TAC
@@ -56,7 +57,7 @@
       \item Radio
       \item Headlamp
       \item Updated ForeFlight
-    \end{clitemize}
+    \end{packlist}
 
     \infoheading{AIRPORT INFO}
 
@@ -80,7 +81,7 @@
       \checklistitem{Runway}{12/30}
       \checklistitem{TPA}{800'}
     \end{clitemize}
-    
+
     \columnbreak
 
     \infosubheading{KHWD}
@@ -104,6 +105,167 @@
       \checklistitem{Runway}{10LR/28LR}
       \checklistitem{TPA Bay}{600'}
       \checklistitem{TPA Land}{1000'}
+    \end{clitemize}
+
+  \end{multicols*}
+
+  \pagebreak
+
+  \switchheading{REGULATIONS}
+
+  \begin{multicols*}{2}
+    \infoheading{14 CFR 91.205 - EQUIPMENT REQS.}
+
+    \infosubheading{VFR DAY}
+
+    \begin{notelist}
+      \item Airspeed Indicator
+      \item Altimeter
+      \item Magnetic Direction Indicator
+      \item Tachometer
+      \item Oil Pressure Gauge
+      \item Oil Temperature Gauge
+      \item Fuel Gauge
+      \item Anticollision Lights
+      \item Safety Belts
+      \item Front Seat Shoulder Harnesses
+      \item ELT
+    \end{notelist}
+
+    \infosubheading{VFR NIGHT}
+
+    \begin{notelist}
+      \item All of VFR DAY
+      \item Approved Position Lights
+      \item If For Hire: Electric Landing Light
+      \item Adequate Source of Electricity
+      \item Three Spare Fuses of Each Kind
+    \end{notelist}
+
+    \infoheading{14 CFR 91.213 - INOP\@. EQUIPMENT}
+
+    \infosubheading{EITHER}
+
+    \begin{notelist}
+      \item Minimum Equipment List
+    \end{notelist}
+
+    \infosubheading{OR}
+
+    \begin{notelist}
+      \item POH Marks as Required
+      \item Required by \S 91.205
+      \item Airworthiness Directives
+    \end{notelist}
+
+    \infoheading{AIRSPACE REQS.\@ AND MINS.}
+
+    \infosubheading{CLASS A}
+
+    \begin{notelist}
+      \item IFR Clearance Required
+    \end{notelist}
+
+    \infosubheading{CLASS B}
+
+    \begin{notelist}
+      \item 3 SM Visibility
+      \item Clear of Clouds
+      \item Mode C Transponder
+      \item Two-Way Radio
+      \item Explicit Clearance
+      \item PPL
+    \end{notelist}
+
+    \infosubheading{CLASS C}
+
+    \begin{notelist}
+      \item 3 SM Visibility
+      \item \textuparrow 1,000ft \textdownarrow 500ft --2,000ft
+      \item Mode C Transponder
+      \item Two-Way Radio
+      \item Established Comms. Prior to Entry
+    \end{notelist}
+
+    \columnbreak
+
+    \infosubheading{CLASS D}
+
+    \begin{notelist}
+      \item 3 SM Visibility
+      \item \textuparrow 1,000ft \textdownarrow 500ft --2,000ft
+      \item Two-Way Radio
+      \item Established Comms. Prior to Entry
+    \end{notelist}
+
+    \infosubheading{CLASS E}
+
+    \infosubsubheading{BELOW 10,000 MSL}
+
+    \begin{notelist}
+      \item 3 SM Visibility
+      \item \textuparrow 1,000ft \textdownarrow 500ft --2,000ft
+    \end{notelist}
+
+    \infosubsubheading{AT OR ABOVE 10,000 MSL}
+
+    \begin{notelist}
+      \item 5 SM Visibility
+      \item \textuparrow 1,000ft \textdownarrow 1,000ft --1SM
+    \end{notelist}
+
+    \infosubheading{CLASS G}
+
+    \infosubsubheading{AT OR BELOW 1,200 AGL - DAY}
+
+    \begin{notelist}
+      \item 1 SM Visibility
+      \item Clear of Clouds
+    \end{notelist}
+
+    \infosubsubheading{AT OR BELOW 1,200 AGL - NIGHT}
+
+    \begin{notelist}
+      \item 3 SM Visibility
+      \item \textuparrow 1,000ft \textdownarrow 500ft --2,000ft
+    \end{notelist}
+
+    \infosubsubheading{ABOVE 1,200 AGL}
+
+    \begin{notelist}
+      \item 5 SM Visibility
+      \item \textuparrow 1,000ft \textdownarrow 1,000ft --1SM
+    \end{notelist}
+
+    \infoheading{14 CFR 91.159 - CRUISING ALTS.}
+
+    \infosubheading{BELOW 18,000FT}
+
+    \infosubsubheading{MAG\@. COURSE 0 - 179: EAST}
+
+    \begin{notelist}
+      \item Odd Thousands Plus 500ft
+    \end{notelist}
+
+    \infosubsubheading{MAG\@. COURSE 180 - 359: WEST}
+
+    \begin{notelist}
+      \item Even Thousands Plus 500ft
+    \end{notelist}
+
+    \infosubheading{AT OR ABOVE 18,000FT}
+
+    \begin{notelist}
+      \item ATC-Assigned Altitude
+    \end{notelist}
+
+    \infoheading{TRANSPONDER CODES}
+
+    \begin{clitemize}
+        \checklistitem{1200}{VFR}
+        \checklistitem{7500}{HIJACKED}
+        \checklistitem{7600}{LOST COMMS}
+        \checklistitem{7700}{EMERGENCY}
     \end{clitemize}
 
   \end{multicols*}
