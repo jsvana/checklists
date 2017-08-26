@@ -57,7 +57,6 @@
       \checklistitem{Door}{CLOSED}
       \checklistitem{Carb. Heat}{OFF}
       \checklistitem{Mixture}{RICH}
-      \checklistitem{Gas}{ON}
     \end{clitemize}
 
     \flightnote{HOT:\@ SKIP PRIME}
@@ -65,12 +64,13 @@
     \begin{clitemize}
       \checklistitem{Prime}{4x}
       \checklistitem{Master Switch}{ON}
-      \checklistitem{Ignition Switch}{ON}
+      \checklistitem{Mags}{ON}
       \checklistitem{Throttle}{SLIGHT}
       \checklistitem{Brakes}{SET}
       \checklistitem{Clear Prop}{ANNOUNCE}
-      \checklistitem{Engine}{START}
+      \checklistitem{Starter}{PUSH}
       \checklistitem{Throttle}{1000 RPM}
+      \checklistitem{Mixture}{LEAN}
       \checklistitem{Lights}{ON}
       \checklistitem{Radios}{SET}
       \checklistitem{ATIS}{GET}
@@ -84,7 +84,6 @@
     \begin{clitemize}
       \checklistitem{Brakes}{TEST}
       \checklistitem{Controls}{WIND}
-      \checklistitem{Taxi Turns}{EXECUTE}
     \end{clitemize}
 
     \flightheading{RUNUP}
@@ -103,7 +102,6 @@
       \checklistitem{Throttle}{1000 RPM}
       \checklistitem{Doors}{CLOSED}
       \checklistitem{Seatbelts}{CHECK}
-      \checklistitem{Throttle Friction}{SET}
     \end{clitemize}
 
     \switchheading{SWITCH TO FLIGHT}
@@ -111,9 +109,10 @@
     \flightheading{SHUTDOWN}
 
     \begin{clitemize}
-      \checklistitem{XPDR}{SET}
+      \checklistitem{XPDR}{SET, OFF}
       \checklistitem{Brakes}{SET}
-      \checklistitem{Electrical}{OFF}
+      \checklistitem{Lights}{OFF}
+      \checklistitem{GPS}{OFF}
       \checklistitem{Mixture}{IDLE C/O}
       \checklistitem{Mags}{OFF}
       \checklistitem{Master}{OFF}
@@ -123,12 +122,13 @@
     \flightheading{SECURING}
 
     \begin{clitemize}
-      \checklistitem{Lap Belt}{AROUND STICK}
+      \checklistitem{Front Lap Belt}{AROUND STICK}
+      \checklistitem{Back Lap Belt}{BUCKLE}
       \checklistitem{Hobbs/Tach}{NOTE}
       \checklistitem{Squawks}{NOTE}
-      \checklistitem{Sun Shade}{REPLACE}
-      \checklistitem{Pitot Cover}{REPLACE}
+      \checklistitem{Sun Shades}{REPLACE}
       \checklistitem{Wheels}{CHOCK}
+      \checklistitem{Tail Wheel}{REORIENT}
       \checklistitem{Ties}{TIE}
       \checklistitem{Doors}{LOCK}
     \end{clitemize}
@@ -218,7 +218,7 @@
 
     \begin{clitemize}
       \checklistitem{Rotate}{55}
-      \checklistitem{Climb}{75}
+      \checklistitem{Climb}{69}
     \end{clitemize}
 
     \configsubheading{SHORT}
@@ -232,11 +232,11 @@
 
     \begin{clitemize}
       \checklistitem{Attitude}{TAIL LOW}
-      \checklistitem{Rotate}{55}
-      \checklistitem{Liftoff}{ASSIST}
       \checklistitem{After Liftoff}{LEVEL}
       \checklistitem{Climb}{75}
     \end{clitemize}
+
+    \columnbreak
 
     \configheading{APPROACH CFGS}
 
