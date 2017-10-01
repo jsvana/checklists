@@ -1,0 +1,265 @@
+\documentclass{article}
+
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+
+\title{C152 Checklists}
+\author{Jared Ledvina}
+\date{Sept 2017}
+
+\begin{document}
+
+  \include{common}
+
+  \switchheading{C152 GROUND PROCEDURES}
+
+  \begin{multicols*}{3}
+
+    \flightheading{DISPATCH}
+
+    \begin{clitemize}
+      \clitem{Weather}{BRIEF}
+      \clitem{NOTAMs}{CHECK}
+      \clitem{W\&B}{CHECK}
+      \clitem{Perf. Reqs.}{CHECK}
+      \clitem{Squawks}{CHECK}
+    \end{clitemize}
+
+    \flightheading{PREFLIGHT INSPECTION}
+
+    \begin{clitemize}
+      \clitem{Fuel}{DRAIN, CHECK}
+      \clitem{AV1ATE}{CHECK}
+      \clitem{AROW}{CHECK}
+      \clitem{Avionics}{OFF}
+      \clitem{Master}{ON}
+      \clitem{Fuel Gauge}{TRUE}
+      \clitem{Flaps}{EXTEND}
+      \clitem{Electrics}{TEST}
+      \clitem{Electrics}{OFF}
+      \clitem{Master}{OFF}
+      \clitem{Oil}{6-8 qts}
+      \clitem{Exterior}{CHECK}
+      \clitem{Ties/Chocks}{REMOVE}
+      \clitem{Baggage}{CHECK}
+      \clitem{Walkaround}{EXECUTE}
+      \clitem{Seat}{ADJUST}
+    \end{clitemize}
+
+    \flightheading{BEFORE START}
+
+    \begin{clitemize}
+      \clitem{Preflight Inspection}{Complete}
+      \clitem{Passengers}{BRIEF}
+      \clitem{Seats and belts}{ADJUST & LATCH}
+      \clitem{Fuel Selector}{ON}
+      \clitem{Mixture}{RICH}
+      \clitem{Throttle}{OPEN 1/2"}
+      \clitem{Carb Heat}{COLD}
+      \clitem{Circuit Breakers}{CHECK IN}
+      \clitem{Electrical Switches}{OFF}
+      \clitem{Beacon}{ON}
+      \clitem{Avionics}{OFF}
+    \end{clitemize}
+    
+    \flightheading{ENGINE START}
+
+    \begin{clitemize}
+      \clitem{Master Switch}{ON}
+      \clitem{Prime}{AS REQUIRED}
+      \clitem{Clear Prop}{ANNOUNCE}
+      \clitem{Starter}{ENGAGE}
+      \clitem{Throttle}{1000 RPM}
+      \clitem{Oil Pressure}{CHECK}
+      \clitem{Nav Lights}{AS REQUIRED}
+      \clitem{Avionics}{ON}
+    \end{clitemize}
+
+    \switchheading{TAXI AWAY FROM HAZARDS}
+
+    \flightheading{AFTER START}
+
+    \begin{clitemize}
+      \clitem{Flaps}{RETRACT}
+      \clitem{Mixture}{LEAN FOR TAXI}
+      \clitem{Radios}{SET}
+      \clitem{ATIS}{GET}
+      \clitem{Barometer}{SET}
+      \clitem{Taxi Diag.}{OPEN}
+    \end{clitemize}
+
+    \flightheading{TAXI}
+
+    \begin{clitemize}
+      \clitem{Brakes}{TEST}
+      \clitem{Controls}{WIND}
+      \clitem{Taxi Turns}{EXECUTE}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO FLIGHT}
+
+    \flightheading{SHUTDOWN}
+
+    \begin{clitemize}
+      \clitem{Brakes}{SET}
+      \clitem{Avionics}{OFF}
+      \clitem{Electrical}{OFF}
+      \clitem{Beacon}{ON}
+      \clitem{Throttle}{1000 RPM}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Mags}{OFF}
+      \clitem{Master}{OFF}
+      \clitem{Control Lock}{INSTALL}
+      \clitem{Flight Plan}{CLOSE}
+    \end{clitemize}
+
+  \end{multicols*}
+
+  \pagebreak
+
+  \switchheading{C152 FLIGHT PROCEDURES}
+
+  \begin{multicols*}{3}
+
+    \flightheading{TAKEOFF BRIEF}
+
+    \begin{clitemize}
+      \clitem{Runway}{CHECK}
+      \clitem{HI}{SET TO COMPASS}
+      \clitem{Crosswind}{CHECK}
+      \clitem{Abort Speed}{NOTE}
+      \clitem{Technique}{NOTE}
+      \clitem{Flaps}{SET}
+      \clitem{Min. Ret. Alt.}{NOTE}
+      \clitem{Best Glide}{60-70}
+      \clitem{Time}{NOTE}
+      \clitem{Mixture}{BEST POWER}
+    \end{clitemize}
+
+    \flightheading{BEFORE TAKEOFF}
+
+    \begin{clitemize}
+      \clitem{Doors & Windows}{CLOSED}
+      \clitem{Flight Controls}{FREE & CORRECT}
+      \clitem{Fuel Selector}{ON}
+      \clitem{Trim}{TAKEOFF}
+      \clitem{Mixture}{RICH}
+      \clitem{Throttle}{1700 RPM}
+      \clitem{Carb Heat}{CHECK}
+      \clitem{Mags}{CHECK}
+      \clitem{Primer}{IN & LOCKED}
+      \clitem{Vaccuum}{CHECK}
+      \clitem{Low Vac Light}{OUT}
+      \clitem{Low Volt Light}{OUT}
+      \clitem{Ammeter/Voltmeter}{CHECK}
+      \clitem{Oil Temp}{CHECK}
+      \clitem{Oil Pressure}{CHECK}
+      \clitem{Fuel Quantity}{CHECK}
+      \clitem{EGT}{CHECK}
+      \clitem{Throttle}{Idle 1000 RPM}
+      \clitem{Flight Instruments}{CHECK & SET}
+      \clitem{Radios}{SET}
+      \clitem{Transponder}{SET}
+      \clitem{Flaps}{SET}
+      \clitem{Strobe}{ON}
+      \clitem{Landing Light}{ON}
+    \end{clitemize}
+
+    \flightheading{TAKEOFF & CLIMB}
+
+    \begin{clitemize}
+      \clitem{Throttle}{FULL}
+      \clitem{Flaps}{UP}
+      \clitem{Engine Inst.}{MONITOR}
+    \end{clitemize}
+
+    \flightheading{CRUISE}
+
+    \begin{clitemize}
+      \clitem{Throttle}{SET}
+      \clitem{Mixture}{LEAN}
+      \clitem{Trim}{ADJUST}
+      \clitem{Engine Instr.}{CHECK}
+    \end{clitemize}
+
+    \flightheading{BEFORE LANDING}
+
+    \begin{clitemize}
+      \clitem{Fuel Selector}{ON}
+      \clitem{ATIS}{GET}
+      \clitem{Barometer}{SET}
+      \clitem{Tower}{CONTACT}
+      \clitem{Mixture}{RICH}
+      \clitem{Carb Heat}{AS REQUIRED}
+      \clitem{Landing Lights}{ON}
+            \clitem{Seat Belts}{ADJUST & LOCK}
+    \end{clitemize}
+
+    \flightheading{AFTER LANDING}
+
+    \begin{clitemize}
+      \clitem{Flaps}{UP}
+      \clitem{Mixture}{LEAN}
+      \clitem{Carb Heat}{COLD}
+      \clitem{Strobe}{OFF}
+      \clitem{Nav Lights}{AS REQUIRED}
+      \clitem{Landing Light}{AS REQUIRED}
+      \clitem{Radios}{SET}
+      \clitem{Taxi Diag.}{OPEN}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO GROUND}
+
+    \configheading{TAKEOFF CFGS}
+
+    \configsubheading{NORMAL}
+
+    \begin{clitemize}
+      \clitem{Flaps}{UP}
+      \clitem{Rotate}{55}
+      \clitem{Climb}{74}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \clitem{Flaps}{10}
+      \clitem{Brakes}{SET}
+      \clitem{Climb}{56 TO 50'}
+      \clitem{Flaps}{UP}
+    \end{clitemize}
+
+    \configsubheading{SOFT}
+
+    \begin{clitemize}
+      \clitem{Flaps}{10}
+      \clitem{Nosewheel}{LIGHT}
+      \clitem{Ground Effect}{60}
+      \clitem{Climb}{65}
+      \clitem{Flaps}{UP}
+    \end{clitemize}
+
+    \configheading{APPROACH CFGS}
+
+    \configsubheading{NORMAL/SOFT}
+
+    \begin{clitemize}
+      \clitem{Flaps}{FULL}
+      \clitem{Speed}{65}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \clitem{Flaps}{FULL}
+      \clitem{Speed}{60}
+    \end{clitemize}
+
+  \end{multicols*}
+
+\end{document}
