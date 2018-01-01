@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{fixltx2e}
+\usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
+\usepackage[unicode]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+
+\title{ATIS Copy Sheet}
+\author{Jay Vana}
+\date{December 2017}
+
+\newcommand{\atistable}{%
+  \vspace{1mm}
+  \begin{tabularx}{\linewidth}{|l|X|}
+    \hline
+    \textbf{INFO} \vline & \textbf{AIRPORT} \vline \\
+    \hline
+    \textbf{WIND} & \\
+    \hline
+    \textbf{VIS} & \\
+    \hline
+    \multirow{2}{*}{\textbf{CLOUDS}} & \hspace{24mm} \textbf{F S B O} \\ & \hspace{24mm} \textbf{F S B O} \\
+    \hline
+    \textbf{TEMP} & \\
+    \hline
+    \textbf{ALT} & \hspace{17mm} \textbf{.} \\
+    \hline
+    \textbf{SQUAWK} & \\
+    \hline
+    \textbf{DEP FREQ} & \\
+    \hline
+  \end{tabularx}
+}
+
+\begin{document}
+
+  \include{common}
+
+  \switchheading{ATIS COPY SHEET}
+
+  \begin{multicols}{2}
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+  \end{multicols}
+
+  \pagebreak
+
+  \switchheading{ATIS COPY SHEET}
+
+  \begin{multicols}{2}
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+
+    \atistable
+  \end{multicols}
+
+\end{document}
