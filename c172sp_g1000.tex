@@ -2,7 +2,9 @@
 
 \usepackage{calc}
 \usepackage{enumitem}
+\usepackage{fixltx2e}
 \usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
+\usepackage[unicode]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
 \usepackage{textcomp}
@@ -35,14 +37,14 @@
     \flightheading{PASSENGER BRIEF}
 
     \begin{clitemize}
-      \clitem{PIC}{}
-      \clitem{Ramp Safety}{}
-      \clitem{Flight Plan}{}
-      \clitem{Seatbelts}{}
-      \clitem{Air Vents}{}
-      \clitem{Safety Equipment}{}
-      \clitem{Traffic and Talking}{}
-      \clitem{Questions}{}
+      \clitem{PIC}{NOTE}
+      \clitem{Ramp Safety}{NOTE}
+      \clitem{Flight Plan}{NOTE}
+      \clitem{Seatbelts}{NOTE}
+      \clitem{Air Vents}{NOTE}
+      \clitem{Safety Equipment}{NOTE}
+      \clitem{Traffic \& Talking}{NOTE}
+      \clitem{Questions}{NOTE}
     \end{clitemize}
 
     \flightheading{INSPECTION}
@@ -388,6 +390,25 @@
       \clitem{Breakers}{CHECK}
       \clitem{Master}{ON IF CRITICAL}
       \clitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \configheading{IMPORTANT NUM.}
+
+    \begin{clitemize}
+      \clitemsub{V}{so}{40}
+      \clitemsub{V}{s}{48}
+      \clitemsub{V}{rotate}{55}
+      \clitemsub{V}{x}{62}
+      \clitemsub{V}{y}{74}
+      \clitemsub{V}{fe}{85}
+      \clitemsub{V}{fe-10}{110}
+      \clitemsub{V}{a}{105}
+      \clitemsub{V}{no}{129}
+      \clitemsub{V}{ne}{163}
+      \clitem{Best Glide}{65}
+      \clitem{Max Gross}{2550}
+      \clitem{Max Crosswind}{15}
+      \clitem{Fuel}{53}
     \end{clitemize}
 
   \end{multicols*}
