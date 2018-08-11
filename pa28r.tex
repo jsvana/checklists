@@ -1,0 +1,461 @@
+\documentclass{article}
+
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{fixltx2e}
+\usepackage[paperwidth=6in, paperheight=9in, margin={1cm,1cm}]{geometry}
+\usepackage[unicode]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\usepackage{xfrac}
+
+\title{PA28R Checklists}
+\author{Jay Vana}
+\date{August 2018}
+
+\begin{document}
+  \include{common}
+
+  \switchheading{PA28R GROUND PROCEDURES}
+
+  \begin{multicols*}{3}
+    \flightheading{DISPATCH}
+
+    \begin{clitemize}
+      \clitem{Weather}{BRIEF}
+      \clitem{NOTAMs}{CHECK}
+      \clitem{W\&B}{CHECK}
+      \clitem{Perf. Reqs.}{CHECK}
+      \clitem{Squawks}{CHECK}
+      \clitem{IMSAFE}{CHECK}
+      \clitem{Devices}{CHARGED}
+    \end{clitemize}
+
+    \flightheading{PASSENGER BRIEF}
+
+    \begin{clitemize}
+      \clitem{PIC}{NOTE}
+      \clitem{Ramp Safety}{NOTE}
+      \clitem{Flight Plan}{NOTE}
+      \clitem{Seatbelts}{NOTE}
+      \clitem{Air Vents}{NOTE}
+      \clitem{Sick Bags}{NOTE}
+      \clitem{Fire Extinguisher}{NOTE}
+      \clitem{Exits}{NOTE}
+      \clitem{Traffic \& Talking}{NOTE}
+      \clitem{Questions}{NOTE}
+    \end{clitemize}
+
+    \flightheading{INSPECTION}
+
+    \begin{clitemize}
+      \clitem{AV1ATE}{CHECK}
+      \clitem{AROW}{CHECK}
+      \clitem{Fuel}{STICK}
+      \clitem{Oil}{2--8 QT}
+      \clitem{Exterior}{CHECK}
+      \clitem{Ties}{REMOVE}
+      \clitem{Baggage}{CHECK}
+      \clitem{Walkaround}{EXECUTE}
+      \clitem{Seat}{ADJUST}
+    \end{clitemize}
+
+    \flightheading{START}
+
+    \begin{clitemize}
+      \clitem{Passengers}{BRIEF}
+      \clitem{Seatbelts}{CHECK}
+      \clitem{iPad}{CONN SCOUT}
+      \clitem{ForeFlight}{START REC}
+      \clitem{Parking Brake}{ON}
+      \clitem{Prop}{FULL FORWARD}
+      \clitem{Fuel Selector}{TO TANK}
+      \clitem{Throttle}{\sfrac{1}{2}''}
+      \clitem{Master}{ON}
+      \clitem{Beacon}{ON}
+      \clitem{Electric Fuel Pump}{ON}
+    \end{clitemize}
+
+    \flightnote{HOT:\@ SKIP PRIME}
+
+    \begin{clitemize}
+      \clitem{Mixture}{FULL RICH}
+      \clitem{Fuel Flow}{OBSERVE}
+    \end{clitemize}
+
+    \flightnote{END PRIME}
+
+    \begin{clitemize}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Mags}{START}
+      \clitem{Mixture}{FULL RICH}
+      \clitem{Throttle}{800 RPM}
+      \clitem{Oil Pressure}{CHECK}
+      \clitem{Mixture}{LEAN}
+      \clitem{Lights}{ON}
+      \clitem{Avionics}{ON}
+      \clitem{Radios}{SET}
+      \clitem{ATIS}{GET}
+      \clitem{Barometer}{SET}
+      \clitem{XPDR}{SET}
+    \end{clitemize}
+
+    \flightheading{TAXI}
+
+    \begin{clitemize}
+      \clitem{Brakes}{TEST}
+      \clitem{Controls}{WIND}
+      \clitem{Taxi Turns}{EXECUTE}
+    \end{clitemize}
+
+    \flightheading{RUNUP}
+
+    \begin{clitemize}
+      \clitem{Brakes}{SET}
+      \clitem{Controls}{CORRECT}
+      \clitem{Flight Inst.}{CHECK}
+      \clitem{Fuel}{BEST TANK}
+      \clitem{Autopilot}{CHECK}
+      \clitem{Trim}{TAKEOFF}
+      \clitem{GPS}{CONFIG}
+      \clitem{Heading Bug}{SET}
+      \clitem{Radios}{SET}
+      \clitem{XPDR}{SET}
+      \clitem{Mixture}{BEST POWER}
+      \clitem{Throttle}{2000 RPM}
+      \clitem{Mags}{CHECK}
+      \clitem{Vacuum}{CHECK}
+      \clitem{Oil}{CHECK}
+      \clitem{Annunciators}{CHECK}
+      \clitem{Prop}{CHECK}
+      \clitem{Prop}{FULL FORWARD}
+      \clitem{Fuel Pump}{CHECK}
+      \clitem{Fuel Pump}{ON}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO FLIGHT}
+
+    \flightheading{SHUTDOWN}
+
+    \begin{clitemize}
+      \clitem{XPDR}{SET}
+      \clitem{Brakes}{SET}
+      \clitem{Electrical}{OFF}
+      \clitem{Avionics}{OFF}
+      \clitem{Prop}{FULL FORWARD}
+      \clitem{Throttle}{IDLE}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Mags}{OFF}
+      \clitem{Master}{OFF}
+      \clitem{Fuel}{LEFT}
+      \clitem{ForeFlight}{STOP REC}
+      \clitem{Flight Plan}{CLOSE}
+    \end{clitemize}
+
+    \flightheading{SECURING}
+
+    \begin{clitemize}
+      \clitem{TODO}{TODO}
+    \end{clitemize}
+
+    \emergencyheading{FIRE ON START}
+
+    \emergencynote{IF NOT STARTED}
+
+    \begin{clitemize}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Throttle}{OPEN}
+      \clitem{Mags}{START}
+    \end{clitemize}
+
+    \emergencynote{IF STARTED}
+
+    \begin{clitemize}
+      \clitem{Run}{5 SEC}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Fuel}{OFF}
+      \clitem{Evacuate}{GO}
+      \clitem{Fire}{EXTINGUISH}
+    \end{clitemize}
+  \end{multicols*}
+
+  \pagebreak
+
+  \switchheading{PA28R FLIGHT PROCEDURES}
+
+  \begin{multicols*}{3}
+    \flightheading{TAKEOFF BRIEF}
+
+    \begin{clitemize}
+      \clitem{Runway}{CHECK}
+      \clitem{HI}{SET TO COMPASS}
+      \clitem{Crosswind}{CHECK}
+      \clitem{Abort Speed}{NOTE}
+      \clitem{Technique}{NOTE}
+      \clitem{Flaps}{SET}
+      \clitem{Min. Ret. Alt.}{NOTE}
+      \clitem{Best Glide}{TODO}
+      \clitem{Timer}{START}
+      \clitem{Mixture}{BEST POWER}
+    \end{clitemize}
+
+    \flightheading{CLIMB}
+
+    \begin{clitemize}
+      \clitem{TODO}{TODO}
+    \end{clitemize}
+
+    \flightheading{PRE-DESCENT}
+
+    \begin{clitemize}
+      \clitem{HI}{SET TO COMPASS}
+      \clitem{Engine Inst.}{CHECK}
+      \clitem{ATIS}{GET}
+      \clitem{Barometer}{SET}
+      \clitem{Tower}{CONTACT}
+      \clitem{Fuel}{BEST TANK}
+      \clitem{Fuel Pump}{ON}
+      \clitem{Mixture}{ENRICH}
+      \clitem{Prop}{FULL FORWARD}
+      \clitem{Gear}{DOWN}
+      \clitem{Lights}{ON}
+    \end{clitemize}
+
+    \flightheading{AFTER LANDING}
+
+    \begin{clitemize}
+      \clitem{Taxi Diag.}{OPEN}
+    \end{clitemize}
+
+    \switchheading{SWITCH TO GROUND}
+
+    \configheading{TAKEOFF CFGS}
+
+    \configsubheading{NORMAL}
+
+    \begin{clitemize}
+      \clitem{Flaps}{UP}
+      \clitem{Rotate}{65}
+      \clitem{Climb}{95}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \clitem{Flaps}{25\textdegree}
+      \clitem{Rotate}{60}
+      \clitem{Climb}{85}
+      \clitem{Flaps}{SLOWLY RETRACT}
+    \end{clitemize}
+
+    \configsubheading{SOFT}
+
+    \begin{clitemize}
+      \clitem{Flaps}{25\textdegree}
+      \clitem{Rotate}{ASAP}
+      \clitem{Accelerate}{TO 85}
+      \clitem{Climb}{85}
+      \clitem{Flaps}{SLOWLY RETRACT}
+    \end{clitemize}
+
+    \configheading{APPROACH CFGS}
+
+    \configsubheading{NORMAL}
+
+    \begin{clitemize}
+      \clitem{Speed}{90}
+      \clitem{Flaps}{FULL}
+    \end{clitemize}
+
+    \configsubheading{SOFT}
+
+    \begin{clitemize}
+      \clitem{TODO}{TODO}
+    \end{clitemize}
+
+    \configsubheading{SHORT}
+
+    \begin{clitemize}
+      \clitem{TODO}{TODO}
+    \end{clitemize}
+
+    \electricalheading{LOW VOLTAGE}
+
+    \begin{clitemize}
+      \clitem{Load}{REDUCE}
+      \clitem{Alt. Breakers}{CHECK}
+      \clitem{Alt.}{OFF 1S}
+      \clitem{Alt.}{ON}
+      \clitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencyheading{ENGINE FAILURE}
+
+    \begin{clitemize}
+      \clitem{Best Glide}{105}
+      \clitem{Landing Site}{FIND}
+      \clitem{Fuel}{OTHER TANK}
+      \clitem{Fuel Pump}{ON}
+      \clitem{Mixture}{RICH}
+      \clitem{Alternate Air}{ON}
+      \clitem{Engine Gauges}{CHECK}
+      \clitem{Mags}{L/R/BOTH}
+      \clitem{Throttle}{TRY}
+      \clitem{Mixture}{TRY}
+      \clitem{Prop}{FULL BACK}
+      \clitem{Throttle}{IDLE}
+      \clitem{Master}{OFF}
+      \clitem{Mags}{OFF}
+      \clitem{Flaps}{AS DESIRED}
+      \clitem{Fuel}{OFF}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Gear}{LOCK IF WANT}
+    \end{clitemize}
+
+    \emergencyheading{PROP OVERSPEED}
+
+    \begin{clitemize}
+      \clitem{Throttle}{RETARD}
+      \clitem{Oil Pressure}{CHECK}
+      \clitem{Prop}{FULL BACK}
+      \clitem{Airspeed}{REDUCE}
+      \clitem{Throttle}{BLW 2700 RPM}
+    \end{clitemize}
+
+    \emergencynote{IF NO RESTART}
+
+    \begin{clitemize}
+      \clitem{Squawk}{7700}
+      \clitem{Emergency}{DECLARE}
+      \clitem{Landing}{EXECUTE}
+    \end{clitemize}
+
+    \emergencyheading{ENGINE FIRE}
+
+    \begin{clitemize}
+      \clitem{Fuel}{OFF}
+      \clitem{Throttle}{IDLE}
+      \clitem{Mixture}{IDLE C/O}
+      \clitem{Heater}{OFF}
+      \clitem{Defroster}{OFF}
+      \clitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \emergencyheading{ELECTRICAL FIRE}
+
+    \begin{clitemize}
+      \clitem{Master}{OFF}
+      \clitem{Vents}{OPEN}
+      \clitem{Cabin Heat}{OFF}
+      \clitem{Flight}{TERMINATE}
+    \end{clitemize}
+
+    \configheading{IMPORTANT NUM.}
+
+    \begin{clitemize}
+      \clitemsub{V}{so}{64}
+      \clitemsub{V}{s}{71}
+      \clitemsub{V}{rotate}{65}
+      \clitemsub{V}{x}{85}
+      \clitemsub{V}{x-r}{96}
+      \clitemsub{V}{y}{95}
+      \clitemsub{V}{y-r}{100}
+      \clitemsub{V}{fe}{125}
+      \clitemsub{V}{a}{131}
+      \clitemsub{V}{no}{170}
+      \clitemsub{V}{ne}{214}
+      \clitemsub{V}{le}{150}
+      \clitemsub{V}{lo}{125}
+      \clitem{Best Glide}{105}
+      \clitem{Max Gross}{2650}
+      \clitem{Max Crosswind}{}
+      \clitem{Fuel}{50}
+      \clitemsub{Fuel}{usable}{48}
+    \end{clitemize}
+  \end{multicols*}
+
+  \pagebreak
+
+  \switchheading{PA28R EXTERIOR}
+
+  \begin{multicols*}{2}
+    \flightheading{COCKPIT}
+    \begin{clitemize}
+      \clitem{Master}{OFF}
+      \clitem{Ignition}{OFF}
+      \clitem{Landing Gear Selector}{DOWN}
+      \clitem{Control Lock (seatbelt?)}{REMOVE}
+    \end{clitemize}
+
+    \flightheading{RIGHT WING TRAILING EDGE}
+    \begin{clitemize}
+      \clitem{Damage}{INSPECT}
+      \clitem{Flap}{CHECK MOVEMENT}
+      \clitem{Aileron}{CHECK MOVEMENT}
+    \end{clitemize}
+
+    \flightheading{RIGHT WING LEADING EDGE}
+    \begin{clitemize}
+      \clitem{Fuel}{STICK}
+      \clitem{Fuel Cap}{SECURE}
+      \clitem{Fuel Sump}{DRAIN}
+      \clitem{Landing Gear Struts}{2''}
+      \clitem{Hydraulic Lines}{CHECK}
+      \clitem{Landing Gear Cylinders}{CHECK}
+      \clitem{Tires}{CHECK}
+      \clitem{Brakes}{CHECK}
+    \end{clitemize}
+
+    \flightheading{NOSE}
+    \begin{clitemize}
+      \clitem{Windsheild}{INSPECT}
+      \clitem{Propeller}{CHECK}
+      \clitem{Spinner}{CHECK}
+      \clitem{Fuel}{CHECK LEAKS}
+      \clitem{Oil}{2--8 QT}
+      \clitem{Cowling}{CHECK COVERS}
+      \clitem{Nose Wheel}{CHECK INFLATION}
+      \clitem{Nose Gear Shock}{3''}
+      \clitem{Hydraulic Lines}{CHECK}
+      \clitem{Landing Gear Cylinder}{CHECK}
+      \clitem{Air Inlet}{CHECK CLEAR}
+    \end{clitemize}
+
+    \flightheading{LEFT WING LEADING EDGE}
+    \begin{clitemize}
+      \clitem{Fuel}{STICK}
+      \clitem{Fuel Cap}{SECURE}
+      \clitem{Fuel Sump}{DRAIN}
+      \clitem{Landing Gear Struts}{~2''}
+      \clitem{Hydraulic Lines}{CHECK}
+      \clitem{Landing Gear Cylinders}{CHECK}
+      \clitem{Tires}{CHECK}
+      \clitem{Brakes}{CHECK}
+    \end{clitemize}
+
+    \flightheading{LEFT WING TRAILING EDGE}
+    \begin{clitemize}
+      \clitem{Damage}{INSPECT}
+      \clitem{Flap}{CHECK MOVEMENT}
+      \clitem{Aileron}{CHECK MOVEMENT}
+    \end{clitemize}
+
+    \flightheading{EMPENNAGE}
+    \begin{clitemize}
+      \clitem{Damage}{INSPECT}
+      \clitem{Flap}{CHECK MOVEMENT}
+      \clitem{Aileron}{CHECK MOVEMENT}
+    \end{clitemize}
+
+    \columnbreak%
+
+    \flightheading{FUSELAGE}
+    \begin{clitemize}
+      \clitem{Tow Bar}{STOW}
+      \clitem{Baggage}{LOCK}
+    \end{clitemize}
+  \end{multicols*}
+
+\end{document}
