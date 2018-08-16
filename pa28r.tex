@@ -62,7 +62,7 @@
       \clitem{Master}{OFF}
       \clitem{Fuel}{INSPECT}
       \clitem{Fuel}{DRAIN}
-      \clitem{Oil}{2--8 QT}
+      \clitem{Oil}{6--8 QT}
       \clitem{Exterior}{CHECK}
       \clitem{Ties/Chocks}{REMOVE}
       \clitem{Baggage}{CHECK}
@@ -216,7 +216,7 @@
       \clitem{Technique}{NOTE}
       \clitem{Flaps}{SET}
       \clitem{Min. Ret. Alt.}{NOTE}
-      \clitem{Best Glide}{TODO}
+      \clitem{Best Glide}{105}
       \clitem{Timer}{START}
       \clitem{Mixture}{BEST POWER}
     \end{clitemize}
@@ -274,7 +274,7 @@
       \clitem{Flaps}{25\textdegree}
       \clitem{Rotate}{60}
       \clitem{Climb}{85}
-      \clitem{Flaps}{SLOWLY RETRACT}
+      \clitem{Flaps}{RETRACT}
     \end{clitemize}
 
     \configsubheading{SOFT}
@@ -284,35 +284,28 @@
       \clitem{Rotate}{ASAP}
       \clitem{Accelerate}{TO 85}
       \clitem{Climb}{85}
-      \clitem{Flaps}{SLOWLY RETRACT}
+      \clitem{Flaps}{RETRACT}
     \end{clitemize}
 
     \configheading{APPROACH CFGS}
 
-    \configsubheading{NORMAL}
+    \configsubheading{NORMAL/SOFT}
 
     \begin{clitemize}
-      \clitem{Speed}{90}
-      \clitem{Flaps}{FULL}
-    \end{clitemize}
-
-    \configsubheading{SOFT}
-
-    \begin{clitemize}
-      \clitem{TODO}{TODO}
+      \clitem{Speed}{80}
     \end{clitemize}
 
     \configsubheading{SHORT}
 
     \begin{clitemize}
-      \clitem{TODO}{TODO}
+      \clitem{Speed}{75}
     \end{clitemize}
 
-    \electricalheading{LOW VOLTAGE}
+    \electricalheading{ALT\@. FAILURE}
 
     \begin{clitemize}
       \clitem{Load}{REDUCE}
-      \clitem{Alt. Breakers}{CHECK}
+      \clitem{Alt. Breaker}{CHECK}
       \clitem{Alt.}{OFF 1S}
       \clitem{Alt.}{ON}
       \clitem{Flight}{TERMINATE}
@@ -341,32 +334,44 @@
       \clitem{Gear}{LOCK IF WANT}
     \end{clitemize}
 
-    \emergencyheading{PROP OVERSPEED}
-
-    \begin{clitemize}
-      \clitem{Throttle}{RETARD}
-      \clitem{Oil Pressure}{CHECK}
-      \clitem{Prop}{FULL BACK}
-      \clitem{Airspeed}{REDUCE}
-      \clitem{Throttle}{BLW 2700 RPM}
-    \end{clitemize}
-
     \emergencynote{IF NO RESTART}
 
     \begin{clitemize}
       \clitem{Squawk}{7700}
       \clitem{Emergency}{DECLARE}
+      \clitem{Prop}{LOW RPM}
+      \clitem{ELT}{ON}
+      \clitem{Fuel Selector}{OFF}
+      \clitem{Door}{UNLATCH}
       \clitem{Landing}{EXECUTE}
+    \end{clitemize}
+
+    \emergencyheading{PROP OVERSPEED}
+
+    \begin{clitemize}
+      \clitem{Throttle}{BELOW 2700}
+      \clitem{Oil Pressure}{CHECK}
+      \clitem{Prop}{FULL FORWARD}
+      \clitem{Airspeed}{REDUCE}
+    \end{clitemize}
+
+    \emergencyheading{MANUAL GEAR EXT.}
+
+    \begin{clitemize}
+      \clitem{Airspeed}{BELOW 100}
+      \clitem{Gear Lever}{DOWN}
+      \clitem{Emgy. Gear Lever}{DOWN}
+      \clitem{Yaw}{IF NECESSARY}
     \end{clitemize}
 
     \emergencyheading{ENGINE FIRE}
 
     \begin{clitemize}
       \clitem{Fuel}{OFF}
-      \clitem{Throttle}{IDLE}
       \clitem{Mixture}{IDLE C/O}
+      \clitem{Throttle}{IDLE}
       \clitem{Heater}{OFF}
-      \clitem{Defroster}{OFF}
+      \clitem{Airspeed}{INCREASE}
       \clitem{Flight}{TERMINATE}
     \end{clitemize}
 
@@ -374,8 +379,8 @@
 
     \begin{clitemize}
       \clitem{Master}{OFF}
-      \clitem{Vents}{OPEN}
       \clitem{Cabin Heat}{OFF}
+      \clitem{Vents}{OPEN}
       \clitem{Flight}{TERMINATE}
     \end{clitemize}
 
@@ -397,92 +402,9 @@
       \clitemsub{V}{lo}{125}
       \clitem{Best Glide}{105}
       \clitem{Max Gross}{2650}
-      \clitem{Max Crosswind}{}
+      \clitem{Max Crosswind}{17}
       \clitem{Fuel}{50}
       \clitemsub{Fuel}{usable}{48}
     \end{clitemize}
   \end{multicols*}
-
-  \pagebreak
-
-  \switchheading{PA28R EXTERIOR}
-
-  \begin{multicols*}{2}
-    \flightheading{COCKPIT}
-    \begin{clitemize}
-      \clitem{Master}{OFF}
-      \clitem{Ignition}{OFF}
-      \clitem{Landing Gear Selector}{DOWN}
-      \clitem{Control Lock (seatbelt?)}{REMOVE}
-    \end{clitemize}
-
-    \flightheading{RIGHT WING TRAILING EDGE}
-    \begin{clitemize}
-      \clitem{Damage}{INSPECT}
-      \clitem{Flap}{CHECK MOVEMENT}
-      \clitem{Aileron}{CHECK MOVEMENT}
-    \end{clitemize}
-
-    \flightheading{RIGHT WING LEADING EDGE}
-    \begin{clitemize}
-      \clitem{Fuel}{STICK}
-      \clitem{Fuel Cap}{SECURE}
-      \clitem{Fuel Sump}{DRAIN}
-      \clitem{Landing Gear Struts}{2''}
-      \clitem{Hydraulic Lines}{CHECK}
-      \clitem{Landing Gear Cylinders}{CHECK}
-      \clitem{Tires}{CHECK}
-      \clitem{Brakes}{CHECK}
-    \end{clitemize}
-
-    \flightheading{NOSE}
-    \begin{clitemize}
-      \clitem{Windsheild}{INSPECT}
-      \clitem{Propeller}{CHECK}
-      \clitem{Spinner}{CHECK}
-      \clitem{Fuel}{CHECK LEAKS}
-      \clitem{Oil}{2--8 QT}
-      \clitem{Cowling}{CHECK COVERS}
-      \clitem{Nose Wheel}{CHECK INFLATION}
-      \clitem{Nose Gear Shock}{3''}
-      \clitem{Hydraulic Lines}{CHECK}
-      \clitem{Landing Gear Cylinder}{CHECK}
-      \clitem{Air Inlet}{CHECK CLEAR}
-    \end{clitemize}
-
-    \flightheading{LEFT WING LEADING EDGE}
-    \begin{clitemize}
-      \clitem{Fuel}{STICK}
-      \clitem{Fuel Cap}{SECURE}
-      \clitem{Fuel Sump}{DRAIN}
-      \clitem{Landing Gear Struts}{~2''}
-      \clitem{Hydraulic Lines}{CHECK}
-      \clitem{Landing Gear Cylinders}{CHECK}
-      \clitem{Tires}{CHECK}
-      \clitem{Brakes}{CHECK}
-    \end{clitemize}
-
-    \flightheading{LEFT WING TRAILING EDGE}
-    \begin{clitemize}
-      \clitem{Damage}{INSPECT}
-      \clitem{Flap}{CHECK MOVEMENT}
-      \clitem{Aileron}{CHECK MOVEMENT}
-    \end{clitemize}
-
-    \flightheading{EMPENNAGE}
-    \begin{clitemize}
-      \clitem{Damage}{INSPECT}
-      \clitem{Flap}{CHECK MOVEMENT}
-      \clitem{Aileron}{CHECK MOVEMENT}
-    \end{clitemize}
-
-    \columnbreak%
-
-    \flightheading{FUSELAGE}
-    \begin{clitemize}
-      \clitem{Tow Bar}{STOW}
-      \clitem{Baggage}{LOCK}
-    \end{clitemize}
-  \end{multicols*}
-
 \end{document}
