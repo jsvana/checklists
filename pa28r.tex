@@ -53,10 +53,18 @@
     \begin{clitemize}
       \clitem{AV1ATE}{CHECK}
       \clitem{AROW}{CHECK}
-      \clitem{Fuel}{STICK}
+      \clitem{Flaps}{EXTEND}
+      \clitem{Gear Lever}{DOWN}
+      \clitem{Master}{ON}
+      \clitem{Gear Lights}{GREEN}
+      \clitem{Electrics}{TEST}
+      \clitem{Fuel Gauges}{TRUE}
+      \clitem{Master}{OFF}
+      \clitem{Fuel}{INSPECT}
+      \clitem{Fuel}{DRAIN}
       \clitem{Oil}{2--8 QT}
       \clitem{Exterior}{CHECK}
-      \clitem{Ties}{REMOVE}
+      \clitem{Ties/Chocks}{REMOVE}
       \clitem{Baggage}{CHECK}
       \clitem{Walkaround}{EXECUTE}
       \clitem{Seat}{ADJUST}
@@ -67,12 +75,17 @@
     \begin{clitemize}
       \clitem{Passengers}{BRIEF}
       \clitem{Seatbelts}{CHECK}
+      \clitem{Flaps}{UP}
       \clitem{iPad}{CONN SCOUT}
       \clitem{ForeFlight}{START REC}
-      \clitem{Parking Brake}{ON}
+      \clitem{Fuel Selector}{PROPER TANK}
+      \clitem{Circuit Breakers}{CHECK}
+      \clitem{Alternate Static}{CHECK}
+      \clitem{Autopilot}{OFF}
       \clitem{Prop}{FULL FORWARD}
-      \clitem{Fuel Selector}{TO TANK}
-      \clitem{Throttle}{\sfrac{1}{2}''}
+      \clitem{Throttle}{SLIGHT}
+      \clitem{Brakes}{SET}
+      \clitem{Prop}{CLEAR}
       \clitem{Master}{ON}
       \clitem{Beacon}{ON}
       \clitem{Electric Fuel Pump}{ON}
@@ -83,19 +96,20 @@
     \begin{clitemize}
       \clitem{Mixture}{FULL RICH}
       \clitem{Fuel Flow}{OBSERVE}
+      \clitem{Mixture}{IDLE C/O}
     \end{clitemize}
 
     \flightnote{END PRIME}
 
     \begin{clitemize}
-      \clitem{Mixture}{IDLE C/O}
       \clitem{Mags}{START}
       \clitem{Mixture}{FULL RICH}
-      \clitem{Throttle}{800 RPM}
+      \clitem{Throttle}{1000 RPM}
       \clitem{Oil Pressure}{CHECK}
       \clitem{Mixture}{LEAN}
+      \clitem{Fuel Pump}{OFF}
+      \clitem{Fuel Pressure}{CHECK}
       \clitem{Lights}{ON}
-      \clitem{Avionics}{ON}
       \clitem{Radios}{SET}
       \clitem{ATIS}{GET}
       \clitem{Barometer}{SET}
@@ -114,11 +128,13 @@
 
     \begin{clitemize}
       \clitem{Brakes}{SET}
+      \clitem{Fuel}{BEST TANK}
+      \clitem{Trim}{TAKEOFF}
       \clitem{Controls}{CORRECT}
       \clitem{Flight Inst.}{CHECK}
-      \clitem{Fuel}{BEST TANK}
+      \clitem{Annunciators}{TEST}
+      \clitem{Alternate Air}{CHECK}
       \clitem{Autopilot}{CHECK}
-      \clitem{Trim}{TAKEOFF}
       \clitem{GPS}{CONFIG}
       \clitem{Heading Bug}{SET}
       \clitem{Radios}{SET}
@@ -126,13 +142,12 @@
       \clitem{Mixture}{BEST POWER}
       \clitem{Throttle}{2000 RPM}
       \clitem{Mags}{CHECK}
-      \clitem{Vacuum}{CHECK}
-      \clitem{Oil}{CHECK}
-      \clitem{Annunciators}{CHECK}
-      \clitem{Prop}{CHECK}
+      \clitem{Prop}{CHECK 3X}
       \clitem{Prop}{FULL FORWARD}
-      \clitem{Fuel Pump}{CHECK}
-      \clitem{Fuel Pump}{ON}
+      \clitem{Vacuum}{CHECK}
+      \clitem{Fuel Pressure}{CHECK}
+      \clitem{Oil}{CHECK}
+      \clitem{Throttle}{CHECK CLOSED}
     \end{clitemize}
 
     \switchheading{SWITCH TO FLIGHT}
@@ -143,13 +158,12 @@
       \clitem{XPDR}{SET}
       \clitem{Brakes}{SET}
       \clitem{Electrical}{OFF}
-      \clitem{Avionics}{OFF}
       \clitem{Prop}{FULL FORWARD}
       \clitem{Throttle}{IDLE}
       \clitem{Mixture}{IDLE C/O}
       \clitem{Mags}{OFF}
       \clitem{Master}{OFF}
-      \clitem{Fuel}{LEFT}
+      \clitem{Fuel}{RIGHT}
       \clitem{ForeFlight}{STOP REC}
       \clitem{Flight Plan}{CLOSE}
     \end{clitemize}
@@ -157,7 +171,13 @@
     \flightheading{SECURING}
 
     \begin{clitemize}
-      \clitem{TODO}{TODO}
+      \clitem{Hobbs/Tach}{NOTE}
+      \clitem{Yoke}{SECURE}
+      \clitem{Ties/Chocks}{REPLACE}
+      \clitem{Pitot Cover}{REPLACE}
+      \clitem{Cover}{REPLACE}
+      \clitem{Cabin Door}{LOCK}
+      \clitem{Baggage Door}{LOCK}
     \end{clitemize}
 
     \emergencyheading{FIRE ON START}
@@ -204,14 +224,16 @@
     \flightheading{CLIMB}
 
     \begin{clitemize}
-      \clitem{TODO}{TODO}
+      \clitem{Speed}{110}
+      \clitem{Power}{25 SQ}
     \end{clitemize}
 
-    \flightheading{PRE-DESCENT}
+    \flightheading{PRE-LANDING}
 
     \begin{clitemize}
       \clitem{HI}{SET TO COMPASS}
       \clitem{Engine Inst.}{CHECK}
+      \clitem{Seatbelts}{CHECK}
       \clitem{ATIS}{GET}
       \clitem{Barometer}{SET}
       \clitem{Tower}{CONTACT}
@@ -226,7 +248,12 @@
     \flightheading{AFTER LANDING}
 
     \begin{clitemize}
-      \clitem{Taxi Diag.}{OPEN}
+      \clitem{Flaps}{UP}
+      \clitem{Fuel Pump}{OFF}
+      \clitem{Strobes}{OFF}
+      \clitem{Landing Light}{OFF}
+      \clitem{Trim}{TAKEOFF}
+      \clitem{Taxi Diagram}{OPEN}
     \end{clitemize}
 
     \switchheading{SWITCH TO GROUND}
