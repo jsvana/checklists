@@ -3,10 +3,12 @@
 \setlength{\parindent}{0pt}
 \setlength{\parsep}{0pt}
 \setlength{\multicolsep}{1mm}
+\setlength{\fboxsep}{0pt}
+\setlength{\fboxrule}{0pt}
 
 \fontfamily{phv}\selectfont
 
-\newenvironment{clitemize}{\begin{itemize}[topsep=0pt,noitemsep,leftmargin=*,label={}]}{\end{itemize}}
+\newenvironment{clitemize}{\begin{itemize}[topsep=0pt,noitemsep,leftmargin=0pt,label={}]}{\end{itemize}}
 \newcommand{\clitem}[2]{\item#1 \dotfill \textbf{#2}}
 \newcommand{\clitemsub}[3]{\item \texorpdfstring{#1\textsubscript{#2} \dotfill \textbf{#3}}{}}
 
@@ -16,13 +18,13 @@
 \newlist{notelist}{itemize}{1}
 \setlist[notelist]{noitemsep,topsep=0pt,leftmargin=1.55em,label=\scriptsize$\blacksquare$}
 
-\newcommand{\columnnote}[2]{\leavevmode\color{white}\colorbox{#1}{\makebox[\columnwidth]{#2}}\leavevmode\color{black}}
+\newcommand{\columnnote}[2]{\color{white}\colorbox{#1}{\strut\makebox[\columnwidth]{\raisebox{-1pt}{#2}}}\color{black}}
 \newcommand{\emergencynote}[1]{\columnnote{red!80!black}{#1}}
 \newcommand{\flightnote}[1]{\columnnote{green!60!black}{#1}}
 
-\newcommand{\columnheading}[2]{\leavevmode\color{white}\colorbox{#1}{\makebox[\columnwidth]{\textbf{#2}}}\leavevmode\color{black}}
+\newcommand{\columnheading}[2]{\color{white}\colorbox{#1}{\strut\makebox[\columnwidth]{\raisebox{-1pt}{\textbf{#2}}}}\color{black}}
 \newcommand{\flightheading}[1]{\columnheading{green!80!red}{#1}}
-\newcommand{\switchheading}[1]{\leavevmode\color{white}\columnheading{black}{#1}\leavevmode\color{black}}
+\newcommand{\switchheading}[1]{\color{white}\columnheading{black}{#1}\color{black}}
 \newcommand{\configheading}[1]{\columnheading{gray}{#1}}
 \newcommand{\configsubheading}[1]{\columnheading{gray!60}{#1}}
 \newcommand{\emergencyheading}[1]{\columnheading{red!80}{#1}}
