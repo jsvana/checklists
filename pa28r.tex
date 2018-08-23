@@ -11,6 +11,9 @@
 \usepackage{xcolor}
 \usepackage{xfrac}
 
+\newcommand{\bestglide}{91--105}
+\newcommand{\idlethrottle}{1000 RPM}
+
 \begin{document}
   \include{common}
 
@@ -26,7 +29,7 @@
       \clitem{Perf. Reqs.}{CHECK}
       \clitem{Squawks}{CHECK}
       \clitem{IMSAFE}{CHECK}
-      \clitem{Devices}{CHARGED}
+      \clitem{Devices}{CHARGE}
     \end{clitemize}
 
     \flightheading{PASSENGER BRIEF}
@@ -49,6 +52,7 @@
     \begin{clitemize}
       \clitem{AV1ATE}{CHECK}
       \clitem{AROW}{CHECK}
+      \clitem{Fuel}{INSPECT}
       \clitem{Flaps}{EXTEND}
       \clitem{Gear Lever}{DOWN}
       \clitem{Master}{ON}
@@ -56,7 +60,6 @@
       \clitem{Electrics}{TEST}
       \clitem{Fuel Gauges}{TRUE}
       \clitem{Master}{OFF}
-      \clitem{Fuel}{INSPECT}
       \clitem{Fuel}{DRAIN}
       \clitem{Oil}{6--8 QT}
       \clitem{Exterior}{CHECK}
@@ -100,7 +103,7 @@
     \begin{clitemize}
       \clitem{Mags}{START}
       \clitem{Mixture}{FULL RICH}
-      \clitem{Throttle}{1000 RPM}
+      \clitem{Throttle}{\idlethrottle}
       \clitem{Oil Pressure}{CHECK}
       \clitem{Mixture}{LEAN}
       \clitem{Fuel Pump}{OFF}
@@ -109,7 +112,7 @@
       \clitem{Radios}{SET}
       \clitem{ATIS}{GET}
       \clitem{Barometer}{SET}
-      \clitem{XPDR}{SET}
+      \clitem{Transponder}{SET}
     \end{clitemize}
 
     \flightheading{TAXI}
@@ -134,7 +137,7 @@
       \clitem{GPS}{CONFIG}
       \clitem{Heading Bug}{SET}
       \clitem{Radios}{SET}
-      \clitem{XPDR}{SET}
+      \clitem{Transponder}{SET}
       \clitem{Mixture}{BEST POWER}
       \clitem{Throttle}{2000 RPM}
       \clitem{Mags}{CHECK}
@@ -143,7 +146,8 @@
       \clitem{Vacuum}{CHECK}
       \clitem{Fuel Pressure}{CHECK}
       \clitem{Oil}{CHECK}
-      \clitem{Throttle}{CHECK}
+      \clitem{Throttle}{CHECK IDLE}
+      \clitem{Throttle}{\idlethrottle}
     \end{clitemize}
 
     \switchheading{SWITCH TO FLIGHT}
@@ -151,7 +155,7 @@
     \flightheading{SHUTDOWN}
 
     \begin{clitemize}
-      \clitem{XPDR}{SET}
+      \clitem{Transponder}{SET}
       \clitem{Brakes}{SET}
       \clitem{Electrical}{OFF}
       \clitem{Prop}{FULL FORWARD}
@@ -212,7 +216,7 @@
       \clitem{Technique}{NOTE}
       \clitem{Flaps}{SET}
       \clitem{Min. Ret. Alt.}{NOTE}
-      \clitem{Best Glide}{105}
+      \clitem{Best Glide}{\bestglide}
       \clitem{Timer}{START}
       \clitem{Mixture}{BEST POWER}
       \clitem{Window}{CLOSED}
@@ -312,7 +316,7 @@
     \emergencyheading{ENGINE FAILURE}
 
     \begin{clitemize}
-      \clitem{Best Glide}{105}
+      \clitem{Best Glide}{\bestglide}
       \clitem{Landing Site}{FIND}
       \clitem{Fuel}{OTHER TANK}
       \clitem{Fuel Pump}{ON}
@@ -394,11 +398,11 @@
       \clitemsub{V}{ne}{214}
       \clitemsub{V}{le}{150}
       \clitemsub{V}{lo}{125}
-      \clitem{Best Glide}{105}
+      \clitem{Best Glide}{\bestglide}
       \clitem{Max Gross}{2650}
       \clitem{Max Crosswind}{17}
       \clitem{Fuel}{50}
-      \clitemsub{Fuel}{usable}{48}
+      \clitem{Usable Fuel}{48}
     \end{clitemize}
   \end{multicols*}
 \end{document}

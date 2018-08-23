@@ -10,6 +10,9 @@
 \usepackage{textcomp}
 \usepackage[table]{xcolor}
 
+\newcommand{\bestglide}{60--70}
+\newcommand{\idlethrottle}{1000 RPM}
+
 \begin{document}
   \include{common}
 
@@ -25,7 +28,7 @@
       \clitem{Perf. Reqs.}{CHECK}
       \clitem{Squawks}{CHECK}
       \clitem{IMSAFE}{CHECK}
-      \clitem{Devices}{CHARGED}
+      \clitem{Devices}{CHARGE}
     \end{clitemize}
 
     \flightheading{PASSENGER BRIEF}
@@ -47,12 +50,12 @@
 
     \begin{clitemize}
       \clitem{AV1ATE}{CHECK}
-      \clitem{Fuel}{STICK}
       \clitem{AROW}{CHECK}
+      \clitem{Fuel}{STICK}
       \clitem{Scout}{SETUP}
       \clitem{Avionics}{OFF}
       \clitem{Master}{ON}
-      \clitem{Fuel Gauge}{TRUE}
+      \clitem{Fuel Gauges}{TRUE}
       \clitem{Flaps}{EXTEND}
       \clitem{Electrics}{TEST}
       \clitem{Electrics}{OFF}
@@ -60,7 +63,7 @@
       \clitem{Oil}{6--8 QTS}
       \clitem{Fuel}{DRAIN}
       \clitem{Exterior}{CHECK}
-      \clitem{Ties}{REMOVE}
+      \clitem{Ties/Chocks}{REMOVE}
       \clitem{Baggage}{CHECK}
       \clitem{Walkaround}{EXECUTE}
       \clitem{Seat}{ADJUST}
@@ -108,10 +111,10 @@
     \begin{clitemize}
       \clitem{Mixture}{IDLE C/O}
       \clitem{Throttle}{SLIGHT}
-      \clitem{Clear Prop}{ANNOUNCE}
+      \clitem{Prop}{CLEAR}
       \clitem{Mags}{START}
       \clitem{Mixture}{BEST POWER}
-      \clitem{Throttle}{1000 RPM}
+      \clitem{Throttle}{\idlethrottle}
       \clitem{Oil Pressure}{CHECK}
       \clitem{Master}{ALT ON}
       \clitem{Mixture}{LEAN}
@@ -121,7 +124,7 @@
       \clitem{Radios}{SET}
       \clitem{ATIS}{GET}
       \clitem{Barometer}{SET}
-      \clitem{XPDR}{SET}
+      \clitem{Transponder}{SET}
     \end{clitemize}
 
     \flightheading{TAXI}
@@ -144,7 +147,7 @@
       \clitem{GPS/NAV}{CONFIG}
       \clitem{Heading Bug}{SET}
       \clitem{Radios}{SET}
-      \clitem{XPDR}{SET}
+      \clitem{Transponder}{SET}
       \clitem{Mixture}{BEST POWER}
       \clitem{Throttle}{1800 RPM}
       \clitem{Annunciators}{CHECK}
@@ -152,7 +155,7 @@
       \clitem{Amps/Volts}{CHECK}
       \clitem{Oil}{CHECK}
       \clitem{Mags}{CHECK}
-      \clitem{Throttle}{1000 RPM}
+      \clitem{Throttle}{\idlethrottle}
       \clitem{Throttle Friction}{SET}
     \end{clitemize}
 
@@ -161,7 +164,7 @@
     \flightheading{SHUTDOWN}
 
     \begin{clitemize}
-      \clitem{XPDR}{SET}
+      \clitem{Transponder}{SET}
       \clitem{Brakes}{SET}
       \clitem{Electrical}{OFF}
       \clitem{Avionics}{OFF}
@@ -222,7 +225,7 @@
       \clitem{Technique}{NOTE}
       \clitem{Flaps}{SET}
       \clitem{Min. Ret. Alt.}{NOTE}
-      \clitem{Best Glide}{60--70}
+      \clitem{Best Glide}{\bestglide}
       \clitem{Time}{NOTE}
       \clitem{Mixture}{BEST POWER}
     \end{clitemize}
@@ -396,10 +399,11 @@
       \clitemsub{V}{a}{105}
       \clitemsub{V}{no}{129}
       \clitemsub{V}{ne}{163}
-      \clitem{Best Glide}{65}
+      \clitem{Best Glide}{\bestglide}
       \clitem{Max Gross}{2550}
       \clitem{Max Crosswind}{15}
-      \clitem{Fuel}{53}
+      \clitem{Fuel}{56}
+      \clitem{Usable Fuel}{53}
     \end{clitemize}
   \end{multicols*}
 \end{document}
